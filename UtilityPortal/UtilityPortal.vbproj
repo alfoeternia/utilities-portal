@@ -199,6 +199,11 @@
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\leaflet-coordinates.css" />
+    <Content Include="Content\leaflet-draw.css" />
+    <Content Include="Content\leaflet-pancontrol.css" />
+    <Content Include="Content\leaflet-zoomslider.css" />
+    <Content Include="Content\leaflet.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -224,6 +229,22 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Images\icon-darkgray.png" />
+    <Content Include="Images\icon-fullscreen.png" />
+    <Content Include="Images\icon-gray.png" />
+    <Content Include="Images\icon-imagery.png" />
+    <Content Include="Images\icon-osm.png" />
+    <Content Include="Images\icon-streets.png" />
+    <Content Include="Images\icon-topographic.png" />
+    <Content Include="Images\logo_ndot-trans.png" />
+    <Content Include="Images\pan-down.png" />
+    <Content Include="Images\pan-left.png" />
+    <Content Include="Images\pan-right.png" />
+    <Content Include="Images\pan-up.png" />
+    <Content Include="Images\pan.png" />
+    <Content Include="Images\redo.png" />
+    <Content Include="Images\undo.png" />
+    <Content Include="Scripts\esri-leaflet.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -233,7 +254,19 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\leaflet-0.6.4.js" />
+    <Content Include="Scripts\leaflet-0.6.4.min.js" />
+    <Content Include="Scripts\leaflet-coordinates.js" />
+    <Content Include="Scripts\leaflet-draw.js" />
+    <Content Include="Scripts\leaflet-fullscreen.js" />
+    <Content Include="Scripts\leaflet-hash.js" />
+    <Content Include="Scripts\leaflet-pancontrol.js" />
+    <Content Include="Scripts\leaflet-src.js" />
+    <Content Include="Scripts\leaflet-zoomslider.js" />
+    <Content Include="Scripts\leaflet.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\mustache.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Web.config" />

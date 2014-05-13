@@ -1,42 +1,252 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿/**
+ * NDOT Utilities Web Portal
+ *
+ * @author Alexis Fouché <contact@alexisfouche.net>
+ */
+
+/* Google Fonts */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+/* Base CSS */
+html, body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Open Sans', 'sans-serif';
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+#map {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
 
-/* styles for validation helpers */
-.field-validation-error {
-    color: #b94a48;
+#title > img {
+	vertical-align: middle;
 }
 
-.field-validation-valid {
-    display: none;
+#title > span {
+	font-size: 22px;
+	font-weight: bold;
+	font-style: italic;
+	font-variant: small-caps;
+	margin-left: 30px;
 }
 
-input.input-validation-error {
-    border: 1px solid #b94a48;
+#utility-layers > p, #base-layers > p, #search > p {
+	font-size: 20px;
+	font-weight: bold;
+	font-variant: small-caps;
+	margin: 0px;
 }
 
-input[type="checkbox"].input-validation-error {
-    border: 0 none;
+.layer-title {
+	height: 25px;
+	font-size: 15px;
+	font-weight: bold;
+	font-variant: small-caps;
 }
 
-.validation-summary-errors {
-    color: #b94a48;
+.hud {
+	background: rgba(0, 0, 0, 0.7);
+
+	padding: 12px;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: 'Open Sans', 'sans-serif';
 }
 
-.validation-summary-valid {
-    display: none;
+#tools {
+	top: 125px;
+}
+
+/* Leaflet CSS extend */
+.leaflet-bar a, .leaflet-bar a:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.leaflet-bar a, .leaflet-bar a:hover {
+  color: #BBB;
+}
+
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+  border: 3px solid rgba(200, 200, 200, 0.5);
+}
+
+.leaflet-control-zoom {
+  display: none;
+}
+
+.leaflet-control-coordinates div.uiHidden {
+  display: none;
+}
+
+.leaflet-control-coordinates div {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.leaflet-control-pan {
+  right: 260px;
+}
+
+.leaflet-control-pan > div {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.leaflet-control-zoomslider {
+  right: 282px;
+  left: auto;
+}
+
+.leaflet-control-zoomslider-wrap, .leaflet-control-zoomslider-body {
+  background: rgba(0, 0, 0, 0.7);
+  border-left: rgba(0, 0, 0, 0.7);
+  border-right: rgba(0, 0, 0, 0.7);
+}
+
+.esri-attribution-logo {
+  display: none !important;
+}
+
+.leaflet-draw {
+	display: none;
+}
+
+.leaflet-popup {
+	z-index: 999;
+}
+
+.leaflet-control-zoom-fullscreen {
+	display: none;
+}
+
+
+
+/*input[type='range'] {
+  -webkit-appearance: none;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #333;
+  background-color: #999;
+  height: 10px;
+  vertical-align: middle;
+}
+input[type='range']::-moz-range-track {
+  -moz-appearance: none;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #333;
+  background-color: #999;
+  height: 10px;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  border-radius: 20px;
+  background-color: #FFF;
+  box-shadow:inset 0 0 10px rgba(000,000,000,0.5);
+  border: 1px solid #999;
+  height: 25px;
+  width: 10px;
+}
+input[type='range']::-moz-range-thumb {
+  -moz-appearance: none;
+  border-radius: 20px;
+  background-color: #FFF;
+  box-shadow:inset 0 0 10px rgba(000,000,000,0.5);
+  border: 1px solid #999;
+  height: 20px;
+  width: 20px;
+  }*/
+#zoom-slider {
+	position:absolute;
+	-webkit-transform: rotate(90deg);
+	top:105px;
+	right: 180px;
+	width: 200px;
+	z-index: 9;
+}
+
+#utility-layers, #base-layers{
+	width: 220px;
+}
+
+#utility-layers > ul, #base-layers > ul, #tools > ul {
+	list-style-type: none;
+	padding: 0px;
+	padding-left: 5px;
+}
+
+#utility-layers li, #base-layers li, #tools li {
+	height: 32px;
+}
+
+#utility-layers li:hover, #base-layers li:hover, #tools li:hover {
+	cursor: pointer;
+}
+
+.layer-color {
+	border: 2px solid rgba(255, 255, 255, 0.95);
+	border-radius: 4px;
+	background-clip: padding-box;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-top:0px;
+	margin-right: 5px;
+}
+
+.layer-title {
+	margin-left: 30px;
+    padding: 0px;
+	padding-left: 5px;
+	border: 2px solid rgba(255, 255, 255, 0.95);
+	background-clip: padding-box;
+	background: rgba(180, 180, 180, 0.5);
+	border-radius: 4px;
+}
+
+.layer-title:hover {
+	background: rgba(60, 60, 60, 0.9);
+}
+
+#tools {
+	width: 150px;
+}
+
+#tools > ul > li {
+	height: 28px;
+	margin-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 2px solid rgba(255, 255, 255, 0.95);
+	background-clip: padding-box;
+	background: rgba(180, 180, 180, 0.5);
+	border-radius: 4px;
+}
+
+#tools > ul > li:hover {
+	background: rgba(60, 60, 60, 0.9);
+}
+
+.tool-icon {
+	float: right;
+	width: 24px;
+	height: 24px;
+}
+
+
+#search {
+	margin-bottom: 110px;
 }
