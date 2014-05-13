@@ -222,7 +222,7 @@ input[type='range']::-moz-range-thumb {
 }
 
 #tools {
-	width: 150px;
+	width: 200px;
 }
 
 #tools > ul > li {

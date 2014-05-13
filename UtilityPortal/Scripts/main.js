@@ -19,7 +19,7 @@ $.get("/api/layers", function(layers) {
   for (var key in layers) {
 
       // Generate the layer object
-      var layer = L.esri.featureLayer("http://localhost:3000/gw/arcgis/" + layers[key]["service"] + "/" + layers[key]["type"] + "/" + layers[key]["layer"], {
+      var layer = L.esri.featureLayer("/gw/arcgis/" + layers[key]["service"] + "/" + layers[key]["type"] + "/" + layers[key]["layer"], {
         style: function (feature) {
           return { color: layers[key]["color"], weight: 4, opacity: 0.3 };
         },
