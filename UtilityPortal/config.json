@@ -1,0 +1,59 @@
+{
+	"arcgis_catalog": "http://10.18.16.32:6080/arcgis/rest/services",
+	"layers": {
+		"0": {
+			"name": "Fiber Optic",
+			"color": "#FFFF00",
+			"service": "myserv",
+			"type": "MyMapServiceyyyy",
+			"layer": "0",
+			"authenticated": false,
+			"enabled": false
+		},
+		"1": {
+			"name": "Over Electric",
+			"color": "#FF0000",
+			"service": "myserv",
+			"type": "MyMapServiceyyyy",
+			"layer": "1",
+			"authenticated": false,
+			"enabled": false
+		},
+		"2": {
+			"name": "SDSwithFiber",
+			"color": "#0000FF",
+			"service": "SDSwithFiber",
+			"type": "SDSwithFiber",
+			"layer": "0",
+			"authenticated": false,
+			"enabled": false
+		},
+		"3": {
+			"name": "SDSwithFiber (L2)",
+			"color": "#0000AA",
+			"service": "SDSwithFiber",
+			"type": "SDSwithFiber",
+			"layer": "1",
+			"authenticated": false,
+			"enabled": false
+		},
+		"4": {
+			"name": "MoreTests",
+			"color": "#0000AA",
+			"service": "MoreTests",
+			"type": "MapStoreTesting",
+			"layer": "1",
+			"authenticated": false,
+			"enabled": false
+		},
+		"5": {
+			"name": "City Boundaries",
+			"color": "#000055",
+			"service": "Alfo",
+			"type": "CityBoundaries",
+			"layer": "0",
+			"authenticated": false,
+			"enabled": false
+		}
+	}
+}
