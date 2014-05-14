@@ -11,7 +11,7 @@ Public Class ArcGisController
     ''' <summary>
     ''' Returns information about a layer, directly from the ArcGIS Server
     ''' </summary>
-    <Route("api/arcgis/{folder}/{service}/{layer}/")> _
+    <Route("api/arcgis/{folder}/{service}/{layer:int}/")> _
     <HttpGet> _
     Public Async Function GetLayerInformation(ByVal folder As String, ByVal service As String, ByVal layer As Integer) As Threading.Tasks.Task(Of Object)
         ' Initialize the client and the request

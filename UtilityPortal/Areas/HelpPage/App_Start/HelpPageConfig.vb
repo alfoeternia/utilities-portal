@@ -18,11 +18,11 @@ Namespace Areas.HelpPage
             '' Uncomment the following to use "sample string" as the sample for all actions that have string as the body parameter or return type.
             '' Also, the string arrays will be used for IEnumerable(Of String). The sample objects will be serialized into different media type 
             '' formats by the available formatters.
-            'config.SetSampleObjects(New Dictionary(Of Type, Object) From
-            '{
-            '     {GetType(String), "sample string"},
-            '     {GetType(IEnumerable(Of String)), New String() {"sample 1", "sample 2"}}
-            '})
+            config.SetSampleObjects(New Dictionary(Of Type, Object) From
+            {
+                 {GetType(String), "sample string"},
+                 {GetType(IEnumerable(Of String)), New String() {"sample 1", "sample 2"}}
+            })
 
             '' Uncomment the following to use "[0]=foo&[1]=bar" directly as the sample for all actions that support form URL encoded format
             '' and have IEnumerable(Of String) as the body parameter or return type.

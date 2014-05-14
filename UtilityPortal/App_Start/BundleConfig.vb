@@ -17,19 +17,14 @@ Public Module BundleConfig
                     "~/Scripts/respond.js"))
 
         bundles.Add(New ScriptBundle("~/bundles/leaflet").Include(
-                    "~/Scripts/leaflet.js"))
-
-        bundles.Add(New ScriptBundle("~/bundles/leaflet-modules").Include(
+                    "~/Scripts/leaflet.js",
+                    "~/Scripts/esri-leaflet.js",
                     "~/Scripts/leaflet-hash.js",
                     "~/Scripts/leaflet-coordinates.js",
                     "~/Scripts/leaflet-pancontrol.js",
                     "~/Scripts/leaflet-zoomslider.js",
                     "~/Scripts/leaflet-draw.js",
-                    "~/Scripts/leaflet-fullscreen.js"
-                    ))
-
-        bundles.Add(New ScriptBundle("~/bundles/esri-leaflet").Include(
-                    "~/Scripts/esri-leaflet.js"))
+                    "~/Scripts/leaflet-fullscreen.js"))
 
         bundles.Add(New ScriptBundle("~/bundles/mustache").Include(
                     "~/Scripts/mustache.js"))
