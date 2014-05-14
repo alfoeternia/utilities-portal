@@ -67,3 +67,9 @@
         </script>
     </div>
 </div>
+
+@Scripts.Render("~/bundles/leaflet")
+@Scripts.Render("~/bundles/esri-leaflet")
+@Scripts.Render("~/bundles/leaflet-modules")
+@Scripts.Render("~/bundles/mustache")
+@Scripts.Render("~/bundles/main")
