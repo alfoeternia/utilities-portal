@@ -169,6 +169,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.vb" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.vb" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.vb" />
+    <Compile Include="Controllers\GeocodeController.vb" />
     <Compile Include="Controllers\LayerController.vb" />
     <Compile Include="Controllers\ArcGisController.vb" />
     <Compile Include="Global.asax.vb">
@@ -242,7 +243,10 @@
     <Content Include="Images\icon-osm.png" />
     <Content Include="Images\icon-streets.png" />
     <Content Include="Images\icon-topographic.png" />
+    <Content Include="Images\loading.gif" />
     <Content Include="Images\logo_ndot-trans.png" />
+    <Content Include="Images\marker-icon.png" />
+    <Content Include="Images\marker-shadow.png" />
     <Content Include="Images\pan-down.png" />
     <Content Include="Images\pan-left.png" />
     <Content Include="Images\pan-right.png" />

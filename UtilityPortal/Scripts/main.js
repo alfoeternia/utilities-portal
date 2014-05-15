@@ -311,30 +311,53 @@ map.on('zoomstart', function(e) {
   }
 });*/
 
-var geocodeSearch = function(address) {
-  $.get('/gw/arcgis/geocode', {text: address}, function(res) {
-    console.log(res);
-    var location = res.locations[0];
-    var geometry = location.feature.geometry;
+var addMarkerAndPanTo = function (x, y, name) {
+    if (name != undefined) L.marker([y, x]).bindPopup(name).addTo(map);
+    else L.marker([y, x]).addTo(map);
 
-    L.marker([geometry.y, geometry.x]).bindPopup(
-      location.name
-    ).addTo(map);
-
-    var latlng = L.latLng(geometry.y, geometry.x);
+    var latlng = L.latLng(y, x);
     map.panTo(latlng);
+}
+
+var geocodeSearch = function(address) {
+    $.get('/api/geocode', { text: address }, function (res) {
+
+        var tableTemplate = $('#tmpl-geocode-table').html();
+        var tableRendered = Mustache.render(tableTemplate);
+        $('#geocode-modal .modal-body').html(tableRendered);
+
+        var trTemplate = $('#tmpl-geocode-tr').html();
+        Mustache.parse(trTemplate); // optional, speeds up future uses
+
+        // Iterate over each result
+        var locations = res.locations;
+        for (var key in locations) {
+            // Render the table line and append it to the table
+            var rendered = Mustache.render(trTemplate, { key: parseInt(key)+1, loc: locations[key] });
+            $('#geocode-modal tbody').append(rendered);
+        }
   });
 }
 
 $('#search-submit').click(function(e) {
-  geocodeSearch($('#search-input').val());
-  $('#search-input').val("");
+    geocodeSearch($('#search-input').val());
+    $('#search-input').val("");
+
+    var loadingTemplate = $('#tmpl-geocode-loading').html();
+    var loadingRendered = Mustache.render(loadingTemplate);
+    $('#geocode-modal .modal-body').html(loadingRendered);
+    $('#geocode-modal').modal({ show: true });
 });
 
 $('#search-input').keypress(function(event) {
     var keycode = (event.keyCode ? event.keyCode : event.which);
     if(keycode == '13') {
-      geocodeSearch($('#search-input').val());
-      $('#search-input').val("");
+        geocodeSearch($('#search-input').val());
+        $('#search-input').val("");
+
+        var loadingTemplate = $('#tmpl-geocode-loading').html();
+        var loadingRendered = Mustache.render(loadingTemplate);
+        $('#geocode-modal .modal-body').html(loadingRendered);
+        $('#geocode-modal').modal({ show: true });
     }
 });

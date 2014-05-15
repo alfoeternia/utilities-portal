@@ -27,27 +27,27 @@
             <p>AERIAL</p>
             <ul>
                 <li id="baselayer-streets">
-                    <div style="background: url(images/icon-streets.png);" class="layer-color"></div>
+                    <div style="background: url(/Images/icon-streets.png);" class="layer-color"></div>
                     <div class="layer-title">Streets</div>
                 </li>
                 <li id="baselayer-imagery">
-                    <div style="background: url(images/icon-imagery.png);" class="layer-color"></div>
+                    <div style="background: url(/Images/icon-imagery.png);" class="layer-color"></div>
                     <div class="layer-title">Imagery</div>
                 </li>
                 <li id="baselayer-gray">
-                    <div style="background: url(images/icon-gray.png);" class="layer-color"></div>
+                    <div style="background: url(/Images/icon-gray.png);" class="layer-color"></div>
                     <div class="layer-title">Gray</div>
                 </li>
                 <li id="baselayer-darkgray">
-                    <div style="background: url(images/icon-darkgray.png);" class="layer-color"></div>
+                    <div style="background: url(/Images/icon-darkgray.png);" class="layer-color"></div>
                     <div class="layer-title">Nightvision</div>
                 </li>
                 <li id="baselayer-topographic">
-                    <div style="background: url(images/icon-topographic.png);" class="layer-color"></div>
+                    <div style="background: url(/Images/icon-topographic.png);" class="layer-color"></div>
                     <div class="layer-title">Topographic</div>
                 </li>
                 <li id="baselayer-osm">
-                    <div style="background: url(images/icon-osm.png);" class="layer-color"></div>
+                    <div style="background: url(/Images/icon-osm.png);" class="layer-color"></div>
                     <div class="layer-title">Open Street Map</div>
                 </li>
             </ul>
@@ -59,12 +59,70 @@
             <input id="search-input" type="text" placeholder="Enter an address...">
             <input id="search-submit" type="submit" value="Search">
         </div>
-        <script id="tmpl-layers" type="x-tmpl-mustache">
-            <li id="layer-{{ id }}">
-                <div class="layer-color" style="background: {{ layer.color }}" />
-                <div class="layer-title">{{ layer.name }}</div>
-            </li>
-        </script>
+        
+    </div>
+</div>
+
+<script id="tmpl-layers" type="x-tmpl-mustache">
+    <li id="layer-{{ id }}">
+        <div class="layer-color" style="background: {{ layer.color }}" />
+        <div class="layer-title">{{ layer.name }}</div>
+    </li>
+</script>
+
+<script id="tmpl-geocode-loading" type="x-tmpl-mustache">
+    <p style="text-align: center;"><img src="/Images/loading.gif" alt="Loading..." /></p>
+</script>
+
+<script id="tmpl-geocode-table" type="x-tmpl-mustache">
+    <table class="table table-striped">
+        <thead style="font-weight: bolder;">
+        <td>#</td>
+        <td>Address</td>
+        <td>Score</td>
+        <td></td>
+        </thead>
+        <tbody></tbody>
+    </table>
+</script>
+
+<script id="tmpl-geocode-tr" type="x-tmpl-mustache">
+    <tr>
+        <td>{{ key }}</td>
+        <td>
+            {{#loc.feature.attributes.PlaceName}}
+            <strong>{{ loc.feature.attributes.PlaceName }}</strong><br />
+            {{/loc.feature.attributes.PlaceName}}
+
+
+            {{#loc.feature.attributes.Place_addr}}
+                {{ loc.feature.attributes.Place_addr }}
+            {{/loc.feature.attributes.Place_addr}}
+
+            {{^loc.feature.attributes.Place_addr}}
+                {{ loc.feature.attributes.Match_addr }}
+            {{/loc.feature.attributes.Place_addr}}
+            <br />
+            <em>{{ loc.feature.attributes.Country }}</em>
+        </td>
+        <td>{{ loc.feature.attributes.Score }} %</td>
+        <td><button type="button" class="btn btn-primary" data-dismiss="modal" onclick="addMarkerAndPanTo({{ loc.feature.geometry.x }}, {{ loc.feature.geometry.y }}, '{{ loc.name }}')">Go</button></td>
+    </tr>
+</script>
+
+<div id="geocode-modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Search results</h4>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
     </div>
 </div>
 
