@@ -9,12 +9,12 @@ Public Class GeocodeController
     ''' GET api/geocode
     ''' 
     ''' <summary>
-    ''' Converts a String to coordinates using ArcGIS Geocoding service.
+    ''' Converts a String to coordinates using ArcGIS Geocoding service.<br />
     ''' More info at http://geocode.arcgis.com/arcgis/index.html
     ''' </summary>
     <Route("api/geocode")> _
     <HttpGet> _
-    Public Async Function GetLayerInformation(<FromUri()> ByVal text As String) As Threading.Tasks.Task(Of Object)
+    Public Async Function Geocode(<FromUri()> ByVal text As String) As Threading.Tasks.Task(Of Object)
         ' Check parameter presence
         If text Is Nothing Then
             Return "Error"

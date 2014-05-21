@@ -67,19 +67,6 @@ $.get("/api/layers", function(layers) {
 
 
 
-
-
-
-var nexrad = L.tileLayer.wms("http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi", {
-  layers: 'nexrad-n0r-900913',
-  format: 'image/png',
-  transparent: true,
-  attribution: "Weather data © 2012 IEM Nexrad"
-});
-
-
-
-
 /* Base Layer management */
 var streets = L.esri.basemapLayer("Streets");
 var imagery = L.esri.basemapLayer("Imagery");
@@ -140,8 +127,6 @@ var map = L.map('map', {
   fullscreenControl: false
 });
 
-
-
 // Scale
 L.control.scale({ imperial: true, maxWidth: 200, position: 'bottomright' }).addTo(map);
 
@@ -186,7 +171,6 @@ map.on('draw:created', function (e) {
         map.fitBounds(layer.getBounds());
     }
 
-    // Do whatever else you need to. (save to db, add to map etc)
     //map.addLayer(layer);
 });
 
