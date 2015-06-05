@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html id="fs">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <title>NDOT Job Approval Web Portal</title>
+
+    <!--[if lt IE 9]>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,300italic,400italic,600italic">
+    <link rel="stylesheet" type="text/css" href="css/dojo-theme-flat/dojo/flat.css">
+    <link rel="stylesheet" type="text/css" href="css/dojo-theme-flat/dgrid/dgrid.css">
+    <link rel="stylesheet" type="text/css" href="css/dojo-theme-flat/dgrid/skins/skin.css">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.13/esri/css/esri.css">
+    <style type="text/css">
+        @import "http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojox/layout/resources/FloatingPane.css";
+        @import "http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojox/layout/resources/ResizeHandle.css";
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/dojo-theme-flat/esri/css/esri_custom.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-toggle.min.css"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-toggle.min.js"></script>
+    <script src="http://js.arcgis.com/3.13/" data-dojo-config="async: true"></script>
+    <script type="text/javascript" src="js/run.js"></script>
+    
+</head>
+
+<body class="nihilo">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" style="height: 50px;">
+
+                <!-- Tools navbar toggle, only displayed on phones -->
+                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="margin-left: 10px;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- Title, displayed on all devices -->
+                <div id="title" class="" style="text-align:center">
+                    <img src="images/logo_ndot-trans.png" alt="">
+
+                    <span>
+                        <!-- Visible if screen is larger than 1300px -->
+                        <span class="visible-if-gt-1300px" style="font-size:17px;">Job</span>
+
+                        Approval
+                        
+                        <!-- Visible if screen is larger than 1300px -->
+                        <span class="visible-if-gt-1300px" style="font-size:17px;">Portal</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <!-- Tablets and small screens -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown hidden-lg">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#" id="zoom-in-md"><div class="glyphicon glyphicon-zoom-in"></div> Zoom In</a></li>
+                            <li><a href="#" id="zoom-out-md"><div class="glyphicon glyphicon-zoom-out"></div> Zoom Out</a></li>
+                            <li><a href="#" id="undo-zoom-md"><div class="glyphicon glyphicon-chevron-left"></div> Undo Zoom</a></li>
+                            <li><a href="#" id="redo-zoom-md"><div class="glyphicon glyphicon-chevron-right"></div> Redo Zoom</a></li>
+                            <li><a href="#" id="full-screen-md"><div class="glyphicon glyphicon-fullscreen"></div> Fullscreen</a></li>
+                            <li><a href="#" id="full-extent-md"><div class="glyphicon glyphicon-screenshot"></div> Nevada</a></li>
+                            <li><a href="#" id="get-data-md"><div class="glyphicon glyphicon-th-list"></div> Get Data</a></li>
+                            <li><a href="#" id="get-projects-md"><div class="glyphicon glyphicon-road"></div> Projects List</a></li>
+
+                        </ul>
+                    </li> 
+                </ul>
+
+                <!-- Desktop (large screens) -->
+                <ul class="nav navbar-nav hidden-xs hidden-sm hidden-md">
+                    <li id="pan-tool"><a href="#"><div class="glyphicon glyphicon-hand-up"></div> Pan</a></li>
+                    <li><a href="#" id="zoom-in"><div class="glyphicon glyphicon-zoom-in"></div> Zoom In</a></li>
+                    <li><a href="#" id="zoom-out"><div class="glyphicon glyphicon-zoom-out"></div> Zoom Out</a></li>
+                    <li><a href="#" id="undo-zoom"><div class="glyphicon glyphicon-chevron-left"></div> Undo Zoom</a></li>
+                    <li><a href="#" id="redo-zoom"><div class="glyphicon glyphicon-chevron-right"></div> Redo Zoom</a></li>
+                    <li><a href="#" id="full-screen"><div class="glyphicon glyphicon-fullscreen"></div> Fullscreen</a></li>
+                    <li><a href="#" id="full-extent"><div class="glyphicon glyphicon-screenshot"></div> Nevada</a></li>
+                    <li><a href="#" id="get-data"><div class="glyphicon glyphicon-th-list"></div> Get Data</a></li>
+                    <li><a href="#" id="get-projects"><div class="glyphicon glyphicon-road"></div> Projects List</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right visible-if-gt-1300px">
+                    <li>
+                        <a href="index.html">
+                            <div class="glyphicon glyphicon-new-window"></div> UDL Portal
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Phones -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav visible-xs">
+                    <li class="divider"></li>
+                    <li><a href="#" id="full-screen-xs"><div class="glyphicon glyphicon-fullscreen"></div> Fullscreen</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" id="full-extent-xs"><div class="glyphicon glyphicon-screenshot"></div> Zoom to Nevada</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Map Block -->
+    <div id="map"></div>
+
+    <!-- Geocoder Block -->
+    <div id="geocoder-search"></div>
+
+    <!-- Projects search -->
+    <div id="search-box" class="esriGeocoder">
+        <div class="input-group">
+            <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+            <div class="form-control" id="search-project-combobox"></div>
+        </div>
+    </div>
+
+    <!-- Base Layers -->
+    <div id="base-layers" class="hud hidden-xs">
+        <img src="images/base-layers-icon.png" id="base-layers-img" alt="">
+        <div id="base-layers-content">
+            <h4>Basemaps</h4>
+            <div id="base-layers-gallery"></div>
+            <div id="base-layers-close" class="pull-left glyphicon glyphicon-resize-small"></div>
+        </div>
+    </div>
+
+    <!-- Layers -->
+    <div id="utility-features" class="hud hidden-xs">
+        <img src="images/layers-icon.png" alt="" id="utility-features-img">
+        <div id="utility-features-content">
+            <div class="pull-right glyphicon glyphicon-resize-small" id="utility-features-close"></div>
+            <div id="utility-features-list"></div>
+        </div>
+    </div>
+
+    <!-- Data tool (Floating Pane) -->
+    <div id="data-tool" style="visibility:none; display:none; absolute; top:-1000px; left:-1000px;w">
+        <div style="width: 98%; height: 98%">
+
+            <div id="data-tool-tabcontainer"></div>
+        </div>
+    </div>
+
+    <!-- Projects tool (Floating Pane) -->
+    <div id="projects-tool" style="visibility:none; display:none; absolute; top:-1000px; left:-1000px;w">
+        <div style="width: 98%; height: 98%">
+            <div id="projects-tool-tabcontainer"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,373 @@
+/**
+ * Utilities Web Portal & Job Approval Portal
+ */
+
+
+/* Base CSS */
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Open Sans', 'sans-serif';
+  padding-top: 50px;
+}
+
+
+/*
+ * Map Element
+ */
+#map {
+  position: absolute;
+  top: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+/*
+ * Title
+ */
+#title > img {
+	padding: 3px;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#title > span {
+	font-size: 18px;
+	font-weight: bold;
+	font-style: italic;
+	font-variant: small-caps;
+	margin-left: 0px;
+	color: #FFFFFF;
+}
+
+/**
+ * HUD
+ */
+.hud {
+	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+	border-radius: 5px;
+
+	background: #555555;
+	background: rgba(0, 0, 0, 0.7);
+
+	padding: 12px;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: 'Open Sans', 'sans-serif';
+}
+
+.visible-if-gt-1300px {
+	display:none;
+}
+
+@media all and (min-width: 1300px) {
+	.visible-if-gt-1300px {
+		display:inline;
+	}
+}
+/**
+ * Layers menu
+ */
+
+/* Mobile & Tablet version */
+@media all and (max-width: 767px) {
+
+	.layer-color {
+		border: 2px solid rgba(255, 255, 255, 0.95);
+		border-radius: 4px;
+		background-clip: padding-box;
+		width: 16px;
+		height: 16px;
+		float: left;
+		margin-top:2px;
+		margin-right: 5px;
+		margin-left: 2px;
+	}
+
+	.layer-title {
+		height: 25px;
+		font-size: 17px;
+		font-weight: bold;
+		font-variant: small-caps;
+	}
+
+	.layer-title-enabled {
+		border-radius: 4px;
+		background: rgba(160, 255, 160, 0.2);
+	}
+
+	.layer-coche {
+		display: none;
+	}
+
+	.layer-title-enabled .layer-coche {
+		display: block !important;
+		float: left;
+		margin-left: -40px;
+	}
+
+	.icon-layers {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		margin-top: -1px;
+		line-height: 14px;
+		vertical-align: text-top;
+	}
+
+	.navbar-toggle {
+		height: 34px;
+	}
+
+
+}
+
+/* Desktop version */
+@media all and (min-width: 768px) {
+	#utility-features {
+		top: 70px;
+		right: 15px;
+		position: absolute;
+		max-height: 80%;
+		overflow: auto;
+	}
+
+	#utility-features-content > h3 {
+		font-weight: bold;
+		font-variant: small-caps;
+		margin-top: 0px;
+		padding-bottom: 3px;
+		border-bottom: 1px solid #DDDDDD;
+	}
+
+	#utility-features-content ul {
+		list-style-type: none;
+		padding-left: 5px;
+	}
+
+	#utility-features-content li {
+		/*height: 32px;*/
+	}
+
+	#utility-features-content li:hover {
+		cursor: pointer;
+	}
+
+	#utility-features a {
+		color: #FFFFFF;
+	}
+
+	#utility-features a:hover {
+		text-decoration: none;
+	}
+
+	#utility-features-img {
+		width: 32px;
+		cursor: pointer;
+		display: inline-block;
+	}
+
+	#utility-features-close {
+		cursor: pointer;
+	}
+
+	#utility-features-content {
+		display: none;
+		/*width: 230px;*/
+	}
+
+	.utility-features-expanded {
+		width: 250px;
+		max-height: 90%;
+	}
+
+	.utility-category {
+		font-size: px;
+		font-weight: bold;
+		font-variant: small-caps;
+		padding-bottom: 3px;
+		border-bottom: 1px solid #DDDDDD;
+	}
+
+	.feature-color {
+		border: 2px solid rgba(255, 255, 255, 0.95);
+		border-radius: 4px;
+		background-clip: padding-box;
+		width: 15px;
+		height: 15px;
+		float: left;
+		margin-top:5px;
+		margin-right: 5px;
+	}
+
+	.feature-title {
+		float:left;
+		height: 35px;
+		font-size: 17px;
+		font-weight: bold;
+		font-variant: small-caps;
+		width: 100%;
+	}
+
+	.feature-title:hover {
+		background: rgba(60, 60, 60, 0.7);
+	}
+
+	.layer-list {
+		list-style-type: none;
+		margin-left: 25px;
+		font-size: 14px;
+		font-weight: 100;
+		font-variant: italic;
+		font-variant: small-caps;
+		clear:both;
+	}
+
+	.layer-list li {
+		clear: both;
+		margin-bottom: 3px;
+
+	}
+
+	.toggle.ios, .toggle-on.ios, .toggle-off.ios {
+		border-radius: 20px;
+		float: right;
+	}
+
+	.toggle.ios .toggle-handle {
+		border-radius: 20px;
+	} 
+
+}
+
+/*
+ * Base Layers
+ */
+#base-layers{
+	bottom: 15px;
+	left: 15px;
+	position: absolute;
+	z-index: 999;
+}
+
+.baselayer-color {
+	border: 2px solid rgba(255, 255, 255, 0.95);
+	border-radius: 4px;
+	background-clip: padding-box;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-top:0px;
+	margin-right: 5px;
+}
+
+#base-layers-content > h4 {
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+#base-layers-img {
+	width: 32px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+#base-layers-close {
+	cursor: pointer;
+}
+
+#base-layers-content {
+	display: none;
+	font-size: 12px;
+}
+
+/*
+ * Search boxes
+ */
+#search-box {
+	position: absolute;
+	top: 100px;
+	left: 60px;
+	width: 250px;
+	
+}
+
+#geocoder-search {
+	display: block;
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    left: 60px;
+}
+
+/*
+ * Dojo tweaks
+ */
+
+#table-modal
+{
+	overflow: auto;
+	width: 100%;
+	height: 250px;
+	z-index: 999;
+	position:absolute;
+	bottom:0;
+}
+
+#table-modal th
+{
+	font-size: 10px;
+}
+
+#table-modal td
+{
+	font-size: 10px;
+}
+
+#table-modal td:hover
+{
+	font-size: 10px;
+	background-color: rgba(160, 255, 160, 0.4);
+}
+
+#table-modal table
+{
+	width: 100%;
+}
+
+.esriScalebar
+{
+	margin-right: 50px;
+	margin-bottom: 30px;
+}
+
+#dojoxGlobalFloatingDock {
+	left: 10px !important;
+}
+.dojoxDock {
+	border: none;
+	background: none;
+	padding-left: 90px;
+}
+
+.dojoxDockNode {
+	height: 40px;
+	margin-bottom: 15px;
+
+	border: 0px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+	border-radius: 5px;
+
+	background: #555555;
+	background: rgba(0, 0, 0, 0.7);
+
+	padding: 8px;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: 'Open Sans', 'sans-serif';
+}
+
+.dgrid-cell {
+	width: 100px;
+}
