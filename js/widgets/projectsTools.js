@@ -19,6 +19,7 @@ define([
   'dijit/form/DropDownButton',
   'dijit/Dialog',
   'dijit/ConfirmTooltipDialog',
+  'dijit/ConfirmDialog',
   'dgrid/Grid',
   // DOM components
   'dojo/dom',
@@ -28,7 +29,7 @@ define([
   'dojo/dom-style'
 ], function(declare, lang, on, stamp, locale,
   Query, QueryTask, Geoprocessor, IdentityManager,
-  FloatingPane, TabContainer, ContentPane, Button, DropDownButton, Dialog, ConfirmTooltipDialog, dGrid,
+  FloatingPane, TabContainer, ContentPane, Button, DropDownButton, Dialog, ConfirmTooltipDialog, Dialog, dGrid,
   dom, domAttr, domClass, domConstruct, domStyle) {
 
   return declare(null, {
@@ -39,12 +40,14 @@ define([
     floatingPane: null,
     tabContainer: null,
     index: 0,
+    approval_gpservice: null,
 
     /**
      * ProjectsTools corresponds to the "Projects List" button in the toolbar
      */
     constructor: function(options) {
 
+      this.approval_gpservice = options.approval_gpservice;
       this.map = options.map;
       this.layers = options.layers.filter(function(l) { 
         return l.isProject;
@@ -149,10 +152,9 @@ define([
           item[prop.split('.').pop()] = data.features[i].attributes[prop];
         }
 
+        item.approval_gpservice = this.approval_gpservice;
         items.push(item);
       }
-
-      console.log(items);
 
       var columns = [
         { label: 'Job ID', field: 'JobID', width: '60px' },
@@ -236,8 +238,10 @@ define([
         onClick: lang.hitch(this, function() {
 
           var content = "<table>" ;
-          for (var key in object)
-            content += "<tr><td><strong>" + key + "</strong> </td><td>" + object[key] + "</td></tr>";
+          for (var key in object) {
+            if (key != "approval_gpservice")
+              content += "<tr><td><strong>" + key + "</strong> </td><td>" + object[key] + "</td></tr>";
+          }
 
           var myDialog = new Dialog({
               title: "Information | Job " + object.JobID,
@@ -264,17 +268,35 @@ define([
 
           var userId;
           require(["esri/IdentityManager"], function(IdentityManager) {
-            userId = IdentityManager.credentials.pop().userId;
+            var credentials = IdentityManager.credentials.pop();
+            userId = credentials ? credentials.userId : "unknown";
           });
-          userId = userId || "unknown";
 
           var notes = $('#note-approve-' + data.JobID).val();
-          var gp = new Geoprocessor("http://trc.i2.unlv.edu/arcgis/rest/services/NDOTUDLv1Srvs/ApproveJob/GPServer/UpdateStatus");
-          var params = { approvingUser: "testuser", Approval: "true", jobID: this.JobID, "Approval Notes": notes };
+          var gp = new Geoprocessor(this.approval_gpservice);
+          var params = { approvingUser: userId, Approval: "true", jobID: this.JobID, "Approval Notes": notes };
 
-          gp.execute(params, function(results, messages) {
-            console.log(results, messages);
-          });
+          gp.execute(params,
+
+            // Success
+            function(results, messages) {
+              console.log(results, messages);
+              new Dialog({
+                title: "Project approved",
+                content: "The project has been approved!",
+                style: "width: 300px"
+              }).show();
+            },
+
+            // Error
+            function(err) {
+              new Dialog({
+                title: "An error occured",
+                content: "Description:<br /> <pre>" + err + "</pre>",
+                style: "width: 500px"
+              }).show();
+            }
+          );
 
         })
       });
@@ -296,20 +318,38 @@ define([
           <input data-dojo-type="dijit/form/TextBox" id="note-reject-' + data.JobID + '" name="note"><br>',
           onExecute: lang.hitch(data, function() {
 
-            var userId;
-            require(["esri/IdentityManager"], function(IdentityManager) {
-              userId = IdentityManager.credentials.pop().userId;
-            });
-            userId = userId || "unknown";
+          var userId;
+          require(["esri/IdentityManager"], function(IdentityManager) {
+            var credentials = IdentityManager.credentials.pop();
+            userId = credentials ? credentials.userId : "unknown";
+          });
 
-            var notes = $('#note-approve-' + data.JobID).val();
-            var gp = new Geoprocessor("http://trc.i2.unlv.edu/arcgis/rest/services/NDOTUDLv1Srvs/ApproveJob/GPServer/UpdateStatus");
-            var params = { approvingUser: userId, Approval: "false", jobID: this.JobID, "Approval Notes": notes };
+          var notes = $('#note-approve-' + data.JobID).val();
+          var gp = new Geoprocessor(this.approval_gpservice);
+          var params = { approvingUser: userId, Approval: "false", jobID: this.JobID, "Approval Notes": notes };
 
-            gp.execute(params, function(results, messages) {
+          gp.execute(params,
+
+            // Success
+            function(results, messages) {
               console.log(results, messages);
-            });
-          })
+              new Dialog({
+                title: "Project rejected",
+                content: "The project has been rejected!",
+                style: "width: 300px"
+              }).show();
+            },
+
+            // Error
+            function(err) {
+              new Dialog({
+                title: "An error occured",
+                content: "Description:<br /> <pre>" + err + "</pre>",
+                style: "width: 500px"
+              }).show();
+            }
+          );
+        })
       });
 
       return new DropDownButton({

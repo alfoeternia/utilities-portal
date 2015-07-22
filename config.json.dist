@@ -1,0 +1,685 @@
+{
+	"arcgis_catalog": "ARCGIS_CATALOG_URL",
+	"approval_gpservice": "APPROVAL_GPSERVICE_URL",
+	"features": [
+		{
+			"name": "Water",
+			"service": "UDL_SERVICE_PREFIX/SUE_SERVICE",
+			"category": "SUE Data",
+			"color": "#0000FF",
+			"enabledOnLoad": true,
+			"layers": [
+				{
+					"id": SUE_WATER_POINTS_LAYER_ID,
+					"type": "point",
+					"color": "#0000FF",
+					"size": 2,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.WaterPoints.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.WaterPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WaterPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.WaterPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.WaterPoints.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.WaterPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WaterPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WaterPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.WaterPoints.Tunnel_Casing", "desc": "Tunnel Casing"},
+						{"name": "FIELD_PREFIX.WaterPoints.Tunnel_Dimension", "desc": "Tunnel Dimension"},
+						{"name": "FIELD_PREFIX.WaterPoints.Northing", "desc": "Northing"},
+						{"name": "FIELD_PREFIX.WaterPoints.Easting", "desc": "Easting"},
+						{"name": "FIELD_PREFIX.WaterPoints.Notes", "desc": "Notes"}
+					]
+				},
+				{
+					"id": SUE_WATER_LINES_LAYER_ID,
+					"type": "line",
+					"color": "#0000FF",
+					"width": 2,
+					"opacity": 1.0,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.WaterLines.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.WaterLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WaterLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.WaterLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.WaterLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.WaterLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WaterLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WaterLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.WaterLines.Tunnel_Casing", "desc": "Tunnel Casing"},
+						{"name": "FIELD_PREFIX.WaterLines.Tunnel_Dimension", "desc": "Tunnel Dimension"},
+						{"name": "FIELD_PREFIX.WaterLines.Northing", "desc": "Northing"},
+						{"name": "FIELD_PREFIX.WaterLines.Easting", "desc": "Easting"},
+						{"name": "FIELD_PREFIX.WaterLines.Notes", "desc": "Notes"}
+					]
+				}
+			]
+		},
+
+		{
+			"name": "Waste Water",
+			"color": "#009900",
+			"service": "UDL_SERVICE_PREFIX/SUE_SERVICE",
+			"category": "SUE Data",
+			"enabledOnLoad": true,
+			"layers": [
+				{
+					"id": SUE_WASTEWATER_POINTS_LAYER_ID,
+					"type": "point",
+					"color": "#009900",
+					"size": 2,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.WasteWaterPoints.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Tunnel_Casing", "desc": "Tunnel Casing"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Tunnel_Dimension", "desc": "Tunnel Dimension"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Northing", "desc": "Northing"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Easting", "desc": "Easting"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Notes", "desc": "Notes"}
+					]
+				},
+				{
+					"id": SUE_WASTEWATER_LINES_LAYER_ID,
+					"type": "line",
+					"color": "#009900",
+					"width": 2,
+					"opacity": 1.0,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.WasteWaterLines.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Tunnel_Casing", "desc": "Tunnel Casing"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Tunnel_Dimension", "desc": "Tunnel Dimension"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Notes", "desc": "Notes"}
+					]
+				}
+			]
+		},
+		{
+			"name": "Telecom",
+			"color": "#E68A3E",
+			"service": "UDL_SERVICE_PREFIX/SUE_SERVICE",
+			"category": "SUE Data",
+			"enabledOnLoad": true,
+			"layers": [
+				{
+					"id": SUE_TELECOM_POINTS_LAYER_ID,
+					"type": "point",
+					"color": "#E68A3E",
+					"size": 2,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.TelecomPoints.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.TelecomPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Northing", "desc": "Northing"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Easting", "desc": "Easting"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Notes", "desc": "Notes"}
+					]
+				},
+				{
+					"id": SUE_TELECOM_LINES_LAYER_ID,
+					"type": "line",
+					"color": "#E68A3E",
+					"width": 2,
+					"opacity": 1.0,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.TelecomLines.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.TelecomLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.TelecomLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.TelecomLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.TelecomLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.TelecomLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.TelecomLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.TelecomLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.TelecomLines.Notes", "desc": "Notes"}
+					]
+				}
+			]
+		},
+		{
+			"name": "Petrol",
+			"color": "#E6E600",
+			"service": "UDL_SERVICE_PREFIX/SUE_SERVICE",
+			"category": "SUE Data",
+			"enabledOnLoad": true,
+			"layers": [
+				{
+					"id": SUE_PETROL_POINTS_LAYER_ID,
+					"type": "point",
+					"color": "#E6E600",
+					"size": 2,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.PetrolPoints.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Northing", "desc": "Northing"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Easting", "desc": "Easting"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Notes", "desc": "Notes"}
+					]
+				},
+				{
+					"id": SUE_PETROL_LINES_LAYER_ID,
+					"type": "line",
+					"color": "#E6E600",
+					"width": 2,
+					"opacity": 1.0,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.PetrolLines.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.PetrolLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.PetrolLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.PetrolLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.PetrolLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.PetrolLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.PetrolLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.PetrolLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.PetrolLines.Notes", "desc": "Notes"}
+					]
+				}
+			]
+		},
+		{
+			"name": "Gas",
+			"color": "#FFFF66",
+			"service": "UDL_SERVICE_PREFIX/SUE_SERVICE",
+			"category": "SUE Data",
+			"enabledOnLoad": true,
+			"layers": [
+				{
+					"id": SUE_GAS_POINTS_LAYER_ID,
+					"type": "point",
+					"color": "#FFFF66",
+					"size": 2,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.GasPoints.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.GasPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.GasPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.GasPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.GasPoints.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.GasPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.GasPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.GasPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.GasPoints.Northing", "desc": "Northing"},
+						{"name": "FIELD_PREFIX.GasPoints.Easting", "desc": "Easting"},
+						{"name": "FIELD_PREFIX.GasPoints.Notes", "desc": "Notes"}
+					]
+				},
+				{
+					"id": SUE_GAS_LINES_LAYER_ID,
+					"type": "line",
+					"color": "#FFFF66",
+					"width": 2,
+					"opacity": 1.0,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.GasLines.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.GasLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.GasLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.GasLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.GasLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.GasLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.GasLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.GasLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.GasLines.Notes", "desc": "Notes"}
+					]
+				}
+			]
+		},
+		{
+			"name": "Electric",
+			"color": "#BA0000",
+			"service": "UDL_SERVICE_PREFIX/SUE_SERVICE",
+			"category": "SUE Data",
+			"enabledOnLoad": true,
+			"layers": [
+				{
+					"id": SUE_ELECTRIC_POINTS_LAYER_ID,
+					"type": "point",
+					"color": "#BA0000",
+					"size": 2,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.ElectricPoints.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.ElectricPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Northing", "desc": "Northing"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Easting", "desc": "Easting"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Notes", "desc": "Notes"}
+					]
+				},
+				{
+					"id": SUE_ELECTRIC_LINES_LAYER_ID,
+					"type": "line",
+					"color": "#BA0000",
+					"width": 2,
+					"opacity": 1.0,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.ElectricLines.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.ElectricLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.ElectricLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.ElectricLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.ElectricLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.ElectricLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.ElectricLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.ElectricLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.ElectricLines.Notes", "desc": "Notes"}
+					]
+				}
+			]
+		},
+		
+
+
+
+
+		{
+			"name": "Water",
+			"service": "UDL_SERVICE_PREFIX/SURVEY_SERVICE",
+			"category": "Survey Data",
+			"color": "#0000FF",
+			"enabledOnLoad": true,
+			"layers": [
+				{
+					"id": SURVEY_WATER_POINTS_LAYER_ID,
+					"type": "point",
+					"color": "#0000FF",
+					"size": 2,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.WaterPoints.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.WaterPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WaterPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.WaterPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.WaterPoints.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.WaterPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WaterPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WaterPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.WaterPoints.Tunnel_Casing", "desc": "Tunnel Casing"},
+						{"name": "FIELD_PREFIX.WaterPoints.Tunnel_Dimension", "desc": "Tunnel Dimension"},
+						{"name": "FIELD_PREFIX.WaterPoints.Northing", "desc": "Northing"},
+						{"name": "FIELD_PREFIX.WaterPoints.Easting", "desc": "Easting"},
+						{"name": "FIELD_PREFIX.WaterPoints.Notes", "desc": "Notes"}
+					]
+				},
+				{
+					"id": SURVEY_WATER_LINES_LAYER_ID,
+					"type": "line",
+					"color": "#0000FF",
+					"width": 2,
+					"opacity": 1.0,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.WaterLines.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.WaterLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WaterLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.WaterLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.WaterLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.WaterLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WaterLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WaterLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.WaterLines.Tunnel_Casing", "desc": "Tunnel Casing"},
+						{"name": "FIELD_PREFIX.WaterLines.Tunnel_Dimension", "desc": "Tunnel Dimension"},
+						{"name": "FIELD_PREFIX.WaterLines.Notes", "desc": "Notes"}
+					]
+				}
+			]
+		},
+
+		{
+			"name": "Waste Water",
+			"color": "#009900",
+			"service": "UDL_SERVICE_PREFIX/SURVEY_SERVICE",
+			"category": "Survey Data",
+			"enabledOnLoad": true,
+			"layers": [
+				{
+					"id": SURVEY_WASTEWATER_POINTS_LAYER_ID,
+					"type": "point",
+					"color": "#009900",
+					"size": 2,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.WasteWaterPoints.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Tunnel_Casing", "desc": "Tunnel Casing"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Tunnel_Dimension", "desc": "Tunnel Dimension"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Northing", "desc": "Northing"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Easting", "desc": "Easting"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Notes", "desc": "Notes"}
+					]
+				},
+				{
+					"id": SURVEY_WASTEWATER_LINES_LAYER_ID,
+					"type": "line",
+					"color": "#009900",
+					"width": 2,
+					"opacity": 1.0,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.WasteWaterLines.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Tunnel_Casing", "desc": "Tunnel Casing"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Tunnel_Dimension", "desc": "Tunnel Dimension"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Notes", "desc": "Notes"}
+					]
+				}
+			]
+		},
+		{
+			"name": "Telecom",
+			"color": "#E68A3E",
+			"service": "UDL_SERVICE_PREFIX/SURVEY_SERVICE",
+			"category": "Survey Data",
+			"enabledOnLoad": true,
+			"layers": [
+				{
+					"id": SURVEY_TELECOM_POINTS_LAYER_ID,
+					"type": "point",
+					"color": "#E68A3E",
+					"size": 2,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.TelecomPoints.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.TelecomPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Northing", "desc": "Northing"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Easting", "desc": "Easting"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Notes", "desc": "Notes"}
+					]
+				},
+				{
+					"id": SURVEY_TELECOM_LINES_LAYER_ID,
+					"type": "line",
+					"color": "#E68A3E",
+					"width": 2,
+					"opacity": 1.0,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.TelecomLines.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.TelecomLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.TelecomLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.TelecomLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.TelecomLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.TelecomLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.TelecomLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.TelecomLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.TelecomLines.Notes", "desc": "Notes"}
+					]
+				}
+			]
+		},
+		{
+			"name": "Petrol",
+			"color": "#E6E600",
+			"service": "UDL_SERVICE_PREFIX/SURVEY_SERVICE",
+			"category": "Survey Data",
+			"enabledOnLoad": true,
+			"layers": [
+				{
+					"id": SURVEY_PETROL_POINTS_LAYER_ID,
+					"type": "point",
+					"color": "#E6E600",
+					"size": 2,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.PetrolPoints.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Northing", "desc": "Northing"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Easting", "desc": "Easting"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Notes", "desc": "Notes"}
+					]
+				},
+				{
+					"id": SURVEY_PETROL_LINES_LAYER_ID,
+					"type": "line",
+					"color": "#E6E600",
+					"width": 2,
+					"opacity": 1.0,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.PetrolLines.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.PetrolLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.PetrolLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.PetrolLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.PetrolLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.PetrolLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.PetrolLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.PetrolLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.PetrolLines.Notes", "desc": "Notes"}
+					]
+				}
+			]
+		},
+		{
+			"name": "Gas",
+			"color": "#FFFF66",
+			"service": "UDL_SERVICE_PREFIX/SURVEY_SERVICE",
+			"category": "Survey Data",
+			"enabledOnLoad": true,
+			"layers": [
+				{
+					"id": SURVEY_GAS_POINTS_LAYER_ID,
+					"type": "point",
+					"color": "#FFFF66",
+					"size": 2,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.GasPoints.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.GasPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.GasPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.GasPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.GasPoints.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.GasPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.GasPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.GasPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.GasPoints.Northing", "desc": "Northing"},
+						{"name": "FIELD_PREFIX.GasPoints.Easting", "desc": "Easting"},
+						{"name": "FIELD_PREFIX.GasPoints.Notes", "desc": "Notes"}
+					]
+				},
+				{
+					"id": SURVEY_GAS_LINES_LAYER_ID,
+					"type": "line",
+					"color": "#FFFF66",
+					"width": 2,
+					"opacity": 1.0,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.GasLines.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.GasLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.GasLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.GasLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.GasLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.GasLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.GasLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.GasLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.GasLines.Notes", "desc": "Notes"}
+					]
+				}
+			]
+		},
+		{
+			"name": "Electric",
+			"color": "#BA0000",
+			"service": "UDL_SERVICE_PREFIX/SURVEY_SERVICE",
+			"category": "Survey Data",
+			"enabledOnLoad": true,
+			"layers": [
+				{
+					"id": SURVEY_ELECTRIC_POINTS_LAYER_ID,
+					"type": "point",
+					"color": "#BA0000",
+					"size": 2,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.ElectricPoints.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.ElectricPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Northing", "desc": "Northing"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Easting", "desc": "Easting"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Notes", "desc": "Notes"}
+					]
+				},
+				{
+					"id": SURVEY_ELECTRIC_LINES_LAYER_ID,
+					"type": "line",
+					"color": "#BA0000",
+					"width": 2,
+					"opacity": 1.0,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.ElectricLines.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.ElectricLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.ElectricLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.ElectricLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.ElectricLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.ElectricLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.ElectricLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.ElectricLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.ElectricLines.Notes", "desc": "Notes"}
+					]
+				}
+			]
+		},
+
+
+
+
+		{
+			"name": "SUE Bounds",
+			"color": "#990000",
+			"service": "UDL_SERVICE_PREFIX/SUE_SERVICE",
+			"category": "Project Bounds",
+			"enabledOnLoad": true,
+			"isProject": true,
+			"layers": [
+				{
+					"id": SUE_PROJECTS_LAYER_ID,
+					"type": "polygon",
+					"color": [255, 0, 0, 0.1],
+					"outline": [255, 0, 0, 1],
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.Projects.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.Projects.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.Projects.UploadedBy", "desc": "Uploaded By"},
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "Upload Date"},
+						{"name": "FIELD_PREFIX.Projects.AwaitingApproval", "desc": "Awaiting Approval"},
+						{"name": "FIELD_PREFIX.Projects.Approved", "desc": "Approved"},
+						{"name": "FIELD_PREFIX.Projects.ApprovedBy", "desc": "Approved By"},
+						{"name": "FIELD_PREFIX.Projects.ApprovalDate", "desc": "Approval Date"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit Number"},
+						{"name": "FIELD_PREFIX.Projects.OwnerInfo", "desc": "Owner Info"},
+						{"name": "FIELD_PREFIX.Projects.EasementInfo", "desc": "Easement Info"},
+						{"name": "FIELD_PREFIX.Projects.Quality_Level", "desc": "Quality Level"},
+						{"name": "FIELD_PREFIX.Projects.Notes", "desc": "Notes"}
+					]
+				}
+			],
+			"linkTo": {
+				"title": "See Project",
+				"category": "SUE Data",
+				"field": "JobID"
+			}
+		},
+		{
+			"name": "Survey Bounds",
+			"color": "#990000",
+			"service": "UDL_SERVICE_PREFIX/SURVEY_SERVICE",
+			"category": "Project Bounds",
+			"enabledOnLoad": true,
+			"isProject": true,
+			"layers": [
+				{
+					"id": SURVEY_PROJECTS_LAYER_ID,
+					"type": "polygon",
+					"color": [255, 0, 0, 0.1],
+					"outline": [255, 0, 0, 1],
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "FIELD_PREFIX.Projects.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.Projects.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.Projects.UploadedBy", "desc": "Uploaded By"},
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "Upload Date"},
+						{"name": "FIELD_PREFIX.Projects.AwaitingApproval", "desc": "Awaiting Approval"},
+						{"name": "FIELD_PREFIX.Projects.Approved", "desc": "Approved"},
+						{"name": "FIELD_PREFIX.Projects.ApprovedBy", "desc": "Approved By"},
+						{"name": "FIELD_PREFIX.Projects.ApprovalDate", "desc": "Approval Date"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit Number"},
+						{"name": "FIELD_PREFIX.Projects.OwnerInfo", "desc": "Owner Info"},
+						{"name": "FIELD_PREFIX.Projects.EasementInfo", "desc": "Easement Info"},
+						{"name": "FIELD_PREFIX.Projects.Accuracy_Level", "desc": "Accuracy Level"},
+						{"name": "FIELD_PREFIX.Projects.Notes", "desc": "Notes"}
+					]
+				}
+			],
+			"linkTo": {
+				"title": "See Project",
+				"category": "Survey Data",
+				"field": "JobID"
+			}
+		}
+
+		
+	]
+}

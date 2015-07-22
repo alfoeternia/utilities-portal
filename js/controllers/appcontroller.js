@@ -63,7 +63,8 @@ define([
       var projectsTools = new ProjectsTools({
         map: options.map,
         featuresFile: featuresFile,
-        layers: options.layers
+        layers: options.layers,
+        approval_gpservice: options.approval_gpservice
       });
       projectsTools.load();
     }

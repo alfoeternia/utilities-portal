@@ -1,5 +1,6 @@
 {
 	"arcgis_catalog": "http://trc.i2.unlv.edu/arcgis/rest/services",
+	"approval_gpservice": "http://trc.i2.unlv.edu/arcgis/rest/services/NDOTUDLv1Srvs/ApproveJob/GPServer/UpdateStatus",
 	"features": [
 		{
 			"name": "Roadways",

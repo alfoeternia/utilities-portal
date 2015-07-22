@@ -33,10 +33,11 @@ define([
 
         // Init the layer
         var layer = new FeatureLayer(featuresFile.arcgis_catalog + '/' + feature.service + '/MapServer/' + layerItem.id, {
-          mode: FeatureLayer.MODE_ONDEMAND,
+          mode: FeatureLayer.MODE_SNAPSHOT,
           outFields: layerItem.fields.map(function(f) { return f.name }),
           infoTemplate: template,
-          visible: feature.enabledOnLoad
+          visible: feature.enabledOnLoad,
+          autoGeneralize: true
         });
 
         layer.isProject = feature.isProject || false;

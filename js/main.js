@@ -21,8 +21,8 @@ require([
   
   // Configures proxy for authentication
   // @see https://developers.arcgis.com/javascript/jshelp/ags_proxy.html
-  config.defaults.io.proxyUrl = "http://trc.i2.unlv.edu/arcgisproxy/proxy.ashx";
-  config.defaults.io.alwaysUseProxy = false;
+  //config.defaults.io.proxyUrl = "http://trc.i2.unlv.edu/arcgisproxy/proxy.ashx";
+  //config.defaults.io.alwaysUseProxy = false;
 
   // Loads the appropriate JSON file and loads the app controller
   Request.get(featuresFile, { handleAs:"json" }).then(function(features) {

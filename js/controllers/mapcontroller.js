@@ -23,9 +23,11 @@ define([
 
       var deferred = new Deferred();
       var layersAdded = lang.hitch(this, function(layers) {
+          
           deferred.resolve({
             map: this.map,
-            layers: this.options.layers
+            layers: this.options.layers,
+            approval_gpservice: this.options.featuresFile.approval_gpservice
           });
         });
 
