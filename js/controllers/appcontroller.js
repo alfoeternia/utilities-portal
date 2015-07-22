@@ -5,11 +5,10 @@ define([
   'controllers/toolbarcontroller',
   'widgets/dataTools',
   'widgets/layersTools',
-  'widgets/searchTools',
   'widgets/projectsTools',
   'esri/dijit/Geocoder',
   'esri/IdentityManager'
-], function (MapController, BaseMapController, ToolbarController, DataTools, LayersTools, SearchTools, ProjectsTools, Geocoder) {
+], function (MapController, BaseMapController, ToolbarController, DataTools, LayersTools, ProjectsTools, Geocoder) {
 
   var featuresFile;
 
@@ -67,16 +66,6 @@ define([
         approval_gpservice: options.approval_gpservice
       });
       projectsTools.load();
-    }
-
-    // Loads the projects search box on the top-left corner
-    // Used ONLY for Approval Portal
-    if(ApprovalPortal) {
-      var searchTools = new SearchTools({
-        map: options.map,
-        layers: options.layers
-      });
-      searchTools.load();
     }
 
 
