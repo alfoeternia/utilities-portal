@@ -74,6 +74,7 @@ $SUE_TELECOM_POINTS_LAYER_ID = Read-Host '         What is the ID of TelecomPoin
 $SUE_PETROL_POINTS_LAYER_ID = Read-Host '         What is the ID of PetrolPoints? '
 $SUE_GAS_POINTS_LAYER_ID = Read-Host '         What is the ID of GasPoints? '
 $SUE_ELECTRIC_POINTS_LAYER_ID = Read-Host '         What is the ID of ElectricPoints? '
+$SUE_CMNUNK_POINTS_LAYER_ID = Read-Host '         What is the ID of CmnUnkPoints? '
 
 $SUE_WATER_LINES_LAYER_ID = Read-Host '         What is the ID of WaterLines? '
 $SUE_WASTEWATER_LINES_LAYER_ID = Read-Host '         What is the ID of WasteWaterLines? '
@@ -81,6 +82,7 @@ $SUE_TELECOM_LINES_LAYER_ID = Read-Host '         What is the ID of TelecomLines
 $SUE_PETROL_LINES_LAYER_ID = Read-Host '         What is the ID of PetrolLines? '
 $SUE_GAS_LINES_LAYER_ID = Read-Host '         What is the ID of GasLines? '
 $SUE_ELECTRIC_LINES_LAYER_ID = Read-Host '         What is the ID of ElectricLines? '
+$SUE_CMNUNK_LINES_LAYER_ID = Read-Host '         What is the ID of CmnUnkLines? '
 
 $SUE_PROJECTS_LAYER_ID = Read-Host '         What is the ID of Projects? '
 Write-Host ''
@@ -136,12 +138,14 @@ Foreach-Object {$_ -replace 'SUE_TELECOM_POINTS_LAYER_ID', $SUE_TELECOM_POINTS_L
 Foreach-Object {$_ -replace 'SUE_PETROL_POINTS_LAYER_ID', $SUE_PETROL_POINTS_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_GAS_POINTS_LAYER_ID', $SUE_GAS_POINTS_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_ELECTRIC_POINTS_LAYER_ID', $SUE_ELECTRIC_POINTS_LAYER_ID.Trim()}  | 
+Foreach-Object {$_ -replace 'SUE_CMNUNK_POINTS_LAYER_ID', $SUE_CMNUNK_POINTS_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_WATER_LINES_LAYER_ID', $SUE_WATER_LINES_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_WASTEWATER_LINES_LAYER_ID', $SUE_WASTEWATER_LINES_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_TELECOM_LINES_LAYER_ID', $SUE_TELECOM_LINES_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_PETROL_LINES_LAYER_ID', $SUE_PETROL_LINES_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_GAS_LINES_LAYER_ID', $SUE_GAS_LINES_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_ELECTRIC_LINES_LAYER_ID', $SUE_ELECTRIC_LINES_LAYER_ID.Trim()}  | 
+Foreach-Object {$_ -replace 'SUE_CMNUNK_LINES_LAYER_ID', $SUE_CMNUNK_LINES_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_PROJECTS_LAYER_ID', $SUE_PROJECTS_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SURVEY_WATER_POINTS_LAYER_ID', $SURVEY_WATER_POINTS_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SURVEY_WASTEWATER_POINTS_LAYER_ID', $SURVEY_WASTEWATER_POINTS_LAYER_ID.Trim()}  | 
@@ -171,12 +175,14 @@ Foreach-Object {$_ -replace 'SUE_TELECOM_POINTS_LAYER_ID', $SUE_TELECOM_POINTS_L
 Foreach-Object {$_ -replace 'SUE_PETROL_POINTS_LAYER_ID', $SUE_PETROL_POINTS_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_GAS_POINTS_LAYER_ID', $SUE_GAS_POINTS_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_ELECTRIC_POINTS_LAYER_ID', $SUE_ELECTRIC_POINTS_LAYER_ID.Trim()}  | 
+Foreach-Object {$_ -replace 'SUE_CMNUNK_POINTS_LAYER_ID', $SUE_CMNUNK_POINTS_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_WATER_LINES_LAYER_ID', $SUE_WATER_LINES_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_WASTEWATER_LINES_LAYER_ID', $SUE_WASTEWATER_LINES_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_TELECOM_LINES_LAYER_ID', $SUE_TELECOM_LINES_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_PETROL_LINES_LAYER_ID', $SUE_PETROL_LINES_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_GAS_LINES_LAYER_ID', $SUE_GAS_LINES_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_ELECTRIC_LINES_LAYER_ID', $SUE_ELECTRIC_LINES_LAYER_ID.Trim()}  | 
+Foreach-Object {$_ -replace 'SUE_CMNUNK_LINES_LAYER_ID', $SUE_CMNUNK_LINES_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SUE_PROJECTS_LAYER_ID', $SUE_PROJECTS_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SURVEY_WATER_POINTS_LAYER_ID', $SURVEY_WATER_POINTS_LAYER_ID.Trim()}  | 
 Foreach-Object {$_ -replace 'SURVEY_WASTEWATER_POINTS_LAYER_ID', $SURVEY_WASTEWATER_POINTS_LAYER_ID.Trim()}  | 

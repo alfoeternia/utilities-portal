@@ -300,6 +300,40 @@
 				}
 			]
 		},
+		{
+			"name": "CmnUnk",
+			"color": "#BA0000",
+			"service": "UDL_SERVICE_PREFIX/SUE_SERVICE",
+			"category": "SUE Data",
+			"enabledOnLoad": true,
+			"layers": [
+				{
+					"id": SUE_CMNUNK_POINTS_LAYER_ID,
+					"type": "point",
+					"color": "#BA00BA",
+					"size": 2,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "NDOTUDLv1.DBO.CmnUnkPoints.OBJECTID", "desc": "Object ID"},
+						{"name": "NDOTUDLv1.DBO.CmnUnkPoints.JobID", "desc": "Job ID"},
+						{"name": "NDOTUDLv1.DBO.CmnUnkPoints.Notes", "desc": "Notes"}
+					]
+				},
+				{
+					"id": SUE_CMNUNK_LINES_LAYER_ID,
+					"type": "line",
+					"color": "#BA00BA",
+					"width": 2,
+					"opacity": 1.0,
+					"definitionExpression": "1=1",
+					"fields": [
+						{"name": "NDOTUDLv1.DBO.CmnUnkLines.OBJECTID", "desc": "Object ID"},
+						{"name": "NDOTUDLv1.DBO.CmnUnkLines.JobID", "desc": "Job ID"},
+						{"name": "NDOTUDLv1.DBO.CmnUnkLines.Notes", "desc": "Notes"}
+					]
+				}
+			]
+		},
 		
 
 
