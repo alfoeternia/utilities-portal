@@ -6,9 +6,10 @@ define([
   'widgets/dataTools',
   'widgets/layersTools',
   'widgets/projectsTools',
+  'widgets/filterTools',
   'esri/dijit/Geocoder',
   'esri/IdentityManager'
-], function (MapController, BaseMapController, ToolbarController, DataTools, LayersTools, ProjectsTools, Geocoder) {
+], function (MapController, BaseMapController, ToolbarController, DataTools, LayersTools, ProjectsTools, FilterTools, Geocoder) {
 
   var featuresFile;
 
@@ -66,6 +67,16 @@ define([
         approval_gpservice: options.approval_gpservice
       });
       projectsTools.load();
+    }
+
+    // Filter tool
+    // Used ONLY for Approval Portal
+    if(ApprovalPortal) {
+      var filterTools = new FilterTools({
+        map: options.map,
+        layers: options.layers
+      });
+      filterTools.load();
     }
 
 
