@@ -76,7 +76,7 @@ define([
           dockable: true,
           closable: false,
           preload: false,
-          style: "z-index:100;position:absolute;top:100px;left:100px;width:1050px;height:430px;visibility:visible;",
+          style: "z-index:100;position:absolute;top:100px;left:100px;width:1100px;height:430px;visibility:visible;",
           id: "projects-tool"
         }, dojo.byId("projects-tool"));
         this.floatingPane.startup();
@@ -130,6 +130,7 @@ define([
       query.where = "1=1";
       query.returnGeometry = true;
       query.outFields = [ "*" ];
+      query.outSpatialReference = this.map.spatialReference;
 
       queryTask.execute(query, lang.hitch(this, function(data) {
         if(data.features.length) this._processLayer(layer.projectName, data);
@@ -152,7 +153,9 @@ define([
           item[prop.split('.').pop()] = data.features[i].attributes[prop];
         }
 
+        item.geometry = data.features[i].geometry;
         item.approval_gpservice = this.approval_gpservice;
+        item.map = this.map;
         items.push(item);
       }
 
@@ -163,9 +166,10 @@ define([
         { label: 'Permit Number', field: 'PermitNumber', width: '70px' },
         { label: 'Awaiting Approval?', field: 'AwaitingApproval', width: '55px' },
         { label: 'Approved?', field: 'Approved', width: '35px' },
+        { label: 'Zoom To', renderCell: this.zoomToCell, width: '70px' },
         { label: 'More Info', renderCell: this.moreInfoCell, width: '70px' },
         { label: 'Approve', renderCell: this.approveCell, width: '130px' },
-        { label: 'Reject', renderCell: this.rejectCell, width: '80px' }
+        { label: 'Reject', renderCell: this.rejectCell, width: '130px' }
       ];
             
       var grid = new dGrid({
@@ -229,7 +233,22 @@ define([
     },
 
     /**
-     * Renders the "More Info" celle with a button that displays more information
+     * Renders the "Zoom To" cell with a button that zooms to the project
+     * when clicked.
+     */
+    zoomToCell: function(object, data, td, options) {
+      return new Button({
+        label: "Zoom To",
+        onClick: function() {
+
+          object.map.setExtent(object.geometry.getExtent());
+
+        }
+      }).domNode;
+    },
+
+    /**
+     * Renders the "More Info" cell with a button that displays more information
      * when clicked.
      */
     moreInfoCell: function(object, data, td, options) {
@@ -239,7 +258,7 @@ define([
 
           var content = "<table>" ;
           for (var key in object) {
-            if (key != "approval_gpservice")
+            if (key != "approval_gpservice" && key != "geometry" && key != "map")
               content += "<tr><td><strong>" + key + "</strong> </td><td>" + object[key] + "</td></tr>";
           }
 
