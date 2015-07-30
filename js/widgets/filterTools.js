@@ -34,7 +34,7 @@ define([
 
     load: function() {
 
-      this.memoryStore = new Memory({ idProperty: "OBJECTID" });
+      this.memoryStore = new Memory({ idProperty: "JobID" });
 
       this._initializeSearchBox();
 
@@ -46,7 +46,7 @@ define([
 
       projectLayers = this.layers.filter(function(l) { return l.isProject; });
       projectLayers.forEach(function(layer) {
-        this.populateData(layer.url, layer.projectName);
+        this.populateData(layer.url);
       }, this);
 
 
@@ -111,7 +111,7 @@ define([
     /**
      * Populate data from the server to the filter box
      */
-    populateData: function(url, name) {
+    populateData: function(url) {
       var query = new Query();
       var queryTask = new QueryTask(url);
       query.where = "1=1";
@@ -120,6 +120,7 @@ define([
 
 
       queryTask.execute(query, lang.hitch(this, function(data) {
+        console.log(data.features);
         if(data.features.length) {
           for (var i = 0; i < data.features.length; i++)
           {

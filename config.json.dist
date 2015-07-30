@@ -16,19 +16,24 @@
 					"size": 2,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.WaterPoints.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.WaterPoints.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.WaterPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.WaterPoints.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.WaterPoints.Status", "desc": "Status"},
-						{"name": "FIELD_PREFIX.WaterPoints.Material", "desc": "Material"},
-						{"name": "FIELD_PREFIX.WaterPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
-						{"name": "FIELD_PREFIX.WaterPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Quality_Level", "desc": "QL"},
+						{"name": "FIELD_PREFIX.WaterPoints.Material", "desc": "Material"},	
+						{"name": "FIELD_PREFIX.WaterPoints.Diameter_Size", "desc": "Diameter Size"},
 						{"name": "FIELD_PREFIX.WaterPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
 						{"name": "FIELD_PREFIX.WaterPoints.Tunnel_Casing", "desc": "Tunnel Casing"},
 						{"name": "FIELD_PREFIX.WaterPoints.Tunnel_Dimension", "desc": "Tunnel Dimension"},
 						{"name": "FIELD_PREFIX.WaterPoints.Northing", "desc": "Northing"},
 						{"name": "FIELD_PREFIX.WaterPoints.Easting", "desc": "Easting"},
-						{"name": "FIELD_PREFIX.WaterPoints.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.WaterPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WaterPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WaterPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WaterPoints.Notes", "desc": "Notes"},
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}
 					]
 				},
 				{
@@ -39,19 +44,23 @@
 					"opacity": 1.0,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.WaterLines.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.WaterLines.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.WaterLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.WaterLines.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.WaterLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Quality_Level", "desc": "QL"},
 						{"name": "FIELD_PREFIX.WaterLines.Material", "desc": "Material"},
-						{"name": "FIELD_PREFIX.WaterLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
-						{"name": "FIELD_PREFIX.WaterLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WaterLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.WaterLines.Material", "desc": "Material"},
 						{"name": "FIELD_PREFIX.WaterLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
 						{"name": "FIELD_PREFIX.WaterLines.Tunnel_Casing", "desc": "Tunnel Casing"},
 						{"name": "FIELD_PREFIX.WaterLines.Tunnel_Dimension", "desc": "Tunnel Dimension"},
-						{"name": "FIELD_PREFIX.WaterLines.Northing", "desc": "Northing"},
-						{"name": "FIELD_PREFIX.WaterLines.Easting", "desc": "Easting"},
-						{"name": "FIELD_PREFIX.WaterLines.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.WaterLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WaterLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WaterLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WaterLines.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}	
 					]
 				}
 			]
@@ -71,19 +80,25 @@
 					"size": 2,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.WasteWaterPoints.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.WasteWaterPoints.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.WasteWaterPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.WasteWaterPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Quality_Level", "desc": "QL"},
 						{"name": "FIELD_PREFIX.WasteWaterPoints.Material", "desc": "Material"},
-						{"name": "FIELD_PREFIX.WasteWaterPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
-						{"name": "FIELD_PREFIX.WasteWaterPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Material", "desc": "Material"},
 						{"name": "FIELD_PREFIX.WasteWaterPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
 						{"name": "FIELD_PREFIX.WasteWaterPoints.Tunnel_Casing", "desc": "Tunnel Casing"},
 						{"name": "FIELD_PREFIX.WasteWaterPoints.Tunnel_Dimension", "desc": "Tunnel Dimension"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
 						{"name": "FIELD_PREFIX.WasteWaterPoints.Northing", "desc": "Northing"},
 						{"name": "FIELD_PREFIX.WasteWaterPoints.Easting", "desc": "Easting"},
-						{"name": "FIELD_PREFIX.WasteWaterPoints.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.WasteWaterPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Notes", "desc": "Notes"},
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}
 					]
 				},
 				{
@@ -94,17 +109,23 @@
 					"opacity": 1.0,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.WasteWaterLines.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.WasteWaterLines.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.WasteWaterLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.WasteWaterLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Quality_Level", "desc": "QL"},
 						{"name": "FIELD_PREFIX.WasteWaterLines.Material", "desc": "Material"},
-						{"name": "FIELD_PREFIX.WasteWaterLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
-						{"name": "FIELD_PREFIX.WasteWaterLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Material", "desc": "Material"},
 						{"name": "FIELD_PREFIX.WasteWaterLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
 						{"name": "FIELD_PREFIX.WasteWaterLines.Tunnel_Casing", "desc": "Tunnel Casing"},
 						{"name": "FIELD_PREFIX.WasteWaterLines.Tunnel_Dimension", "desc": "Tunnel Dimension"},
-						{"name": "FIELD_PREFIX.WasteWaterLines.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.WasteWaterLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}
 					]
 				}
 			]
@@ -123,17 +144,26 @@
 					"size": 2,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.TelecomPoints.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.TelecomPoints.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.TelecomPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.TelecomPoints.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.TelecomPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Quality_Level", "desc": "QL"},
 						{"name": "FIELD_PREFIX.TelecomPoints.Material", "desc": "Material"},
-						{"name": "FIELD_PREFIX.TelecomPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
-						{"name": "FIELD_PREFIX.TelecomPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Diameter_Size", "desc": "Diameter Size"},
 						{"name": "FIELD_PREFIX.TelecomPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Num_Conduits", "desc": "# Conduits"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Num_Of_Direct_Buried_Cables", "desc": "# Cables"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Duct_Trench_Infa_Type", "desc": "Duct-Trench-Type"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Duct_Trench_Size", "desc": "Duct-Trench-Size"},
 						{"name": "FIELD_PREFIX.TelecomPoints.Northing", "desc": "Northing"},
 						{"name": "FIELD_PREFIX.TelecomPoints.Easting", "desc": "Easting"},
-						{"name": "FIELD_PREFIX.TelecomPoints.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.TelecomPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.TelecomPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}
 					]
 				},
 				{
@@ -144,15 +174,25 @@
 					"opacity": 1.0,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.TelecomLines.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.TelecomLines.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.TelecomLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.TelecomLines.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.TelecomLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Quality_Level", "desc": "QL"},
 						{"name": "FIELD_PREFIX.TelecomLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.TelecomLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.TelecomLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.TelecomLines.Num_Conduits", "desc": "# Conduits"},
+						{"name": "FIELD_PREFIX.TelecomLines.Num_Of_Direct_Buried_Cables", "desc": "# Cables"},
+						{"name": "FIELD_PREFIX.TelecomLines.Duct_Trench_Infa_Type", "desc": "Duct-Trench-Type"},
+						{"name": "FIELD_PREFIX.TelecomLines.Duct_Trench_Size", "desc": "Duct-Trench-Size"},
+						{"name": "FIELD_PREFIX.TelecomLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
 						{"name": "FIELD_PREFIX.TelecomLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
 						{"name": "FIELD_PREFIX.TelecomLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
-						{"name": "FIELD_PREFIX.TelecomLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
-						{"name": "FIELD_PREFIX.TelecomLines.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.TelecomLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.TelecomLines.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}	
 					]
 				}
 			]
@@ -171,16 +211,24 @@
 					"size": 2,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.PetrolPoints.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.PetrolPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.PetrolPoints.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.PetrolPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Quality_Level", "desc": "QL"},
 						{"name": "FIELD_PREFIX.PetrolPoints.Material", "desc": "Material"},
-						{"name": "FIELD_PREFIX.PetrolPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
-						{"name": "FIELD_PREFIX.PetrolPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Diameter_Size", "desc": "Diameter Size"},
 						{"name": "FIELD_PREFIX.PetrolPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Material_Pipeline_Coating", "desc": "Coating"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Max_Operating_Pressure", "desc": "Max Pressure"},
 						{"name": "FIELD_PREFIX.PetrolPoints.Northing", "desc": "Northing"},
 						{"name": "FIELD_PREFIX.PetrolPoints.Easting", "desc": "Easting"},
-						{"name": "FIELD_PREFIX.PetrolPoints.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.PetrolPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},						
+						{"name": "FIELD_PREFIX.PetrolPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}	
 					]
 				},
 				{
@@ -191,15 +239,24 @@
 					"opacity": 1.0,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.PetrolLines.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.PetrolLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.PetrolLines.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
+						{"name": "FIELD_PREFIX.PetrolLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Quality_Level", "desc": "QL"},
+						{"name": "FIELD_PREFIX.PetrolLines.Material", "desc": "Material"},
 						{"name": "FIELD_PREFIX.PetrolLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.PetrolLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.PetrolLines.Material_Pipeline_Coating", "desc": "Coating"},
+						{"name": "FIELD_PREFIX.PetrolLines.Max_Operating_Pressure", "desc": "Max Pressure"},
 						{"name": "FIELD_PREFIX.PetrolLines.Status", "desc": "Status"},
 						{"name": "FIELD_PREFIX.PetrolLines.Material", "desc": "Material"},
 						{"name": "FIELD_PREFIX.PetrolLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
 						{"name": "FIELD_PREFIX.PetrolLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
-						{"name": "FIELD_PREFIX.PetrolLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
-						{"name": "FIELD_PREFIX.PetrolLines.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.PetrolLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.PetrolLines.Notes", "desc": "Notes"},
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}		
 					]
 				}
 			]
@@ -218,17 +275,24 @@
 					"size": 2,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.GasPoints.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.GasPoints.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.GasPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.GasPoints.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.GasPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Quality_Level", "desc": "QL"},
 						{"name": "FIELD_PREFIX.GasPoints.Material", "desc": "Material"},
-						{"name": "FIELD_PREFIX.GasPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
-						{"name": "FIELD_PREFIX.GasPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.GasPoints.Diameter_Size", "desc": "Diameter Size"},
 						{"name": "FIELD_PREFIX.GasPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.GasPoints.Material_Pipeline_Coating", "desc": "Coating"},
+						{"name": "FIELD_PREFIX.GasPoints.Max_Operating_Pressure", "desc": "Max Pressure"},
 						{"name": "FIELD_PREFIX.GasPoints.Northing", "desc": "Northing"},
 						{"name": "FIELD_PREFIX.GasPoints.Easting", "desc": "Easting"},
-						{"name": "FIELD_PREFIX.GasPoints.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.GasPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.GasPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.GasPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.GasPoints.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}	
 					]
 				},
 				{
@@ -239,15 +303,22 @@
 					"opacity": 1.0,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.GasLines.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.GasLines.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.GasLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.GasLines.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.GasLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Quality_Level", "desc": "QL"},
 						{"name": "FIELD_PREFIX.GasLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.GasLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.GasLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.GasLines.Material_Pipeline_Coating", "desc": "Coating"},
+						{"name": "FIELD_PREFIX.GasLines.Max_Operating_Pressure", "desc": "Max Pressure"},
 						{"name": "FIELD_PREFIX.GasLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
 						{"name": "FIELD_PREFIX.GasLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
-						{"name": "FIELD_PREFIX.GasLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
-						{"name": "FIELD_PREFIX.GasLines.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.GasLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.GasLines.Notes", "desc": "Notes"},
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}	
 					]
 				}
 			]
@@ -266,17 +337,26 @@
 					"size": 2,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.ElectricPoints.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.ElectricPoints.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.ElectricPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.ElectricPoints.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.ElectricPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Quality_Level", "desc": "QL"},
 						{"name": "FIELD_PREFIX.ElectricPoints.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Num_Conduits", "desc": "# Conduits"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Num_Of_Direct_Buried_Cables", "desc": "# Cables"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Duct_Trench_Infa_Type", "desc": "Duct-Trench-Type"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Duct_Trench_Size", "desc": "Duct-Trench-Size"},						
 						{"name": "FIELD_PREFIX.ElectricPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
 						{"name": "FIELD_PREFIX.ElectricPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
-						{"name": "FIELD_PREFIX.ElectricPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
 						{"name": "FIELD_PREFIX.ElectricPoints.Northing", "desc": "Northing"},
 						{"name": "FIELD_PREFIX.ElectricPoints.Easting", "desc": "Easting"},
-						{"name": "FIELD_PREFIX.ElectricPoints.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.ElectricPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}
 					]
 				},
 				{
@@ -287,15 +367,24 @@
 					"opacity": 1.0,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.ElectricLines.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.ElectricLines.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.ElectricLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.ElectricLines.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.ElectricLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Quality_Level", "desc": "QL"},
 						{"name": "FIELD_PREFIX.ElectricLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.ElectricLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.ElectricLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.ElectricLines.Num_Conduits", "desc": "# Conduits"},
+						{"name": "FIELD_PREFIX.ElectricLines.Num_Of_Direct_Buried_Cables", "desc": "# Cables"},
+						{"name": "FIELD_PREFIX.ElectricLines.Duct_Trench_Infa_Type", "desc": "Duct-Trench-Type"},
+						{"name": "FIELD_PREFIX.ElectricLines.Duct_Trench_Size", "desc": "Duct-Trench-Size"},						
 						{"name": "FIELD_PREFIX.ElectricLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
 						{"name": "FIELD_PREFIX.ElectricLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
-						{"name": "FIELD_PREFIX.ElectricLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
-						{"name": "FIELD_PREFIX.ElectricLines.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.ElectricLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.ElectricLines.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}
 					]
 				}
 			]
@@ -353,19 +442,24 @@
 					"size": 2,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.WaterPoints.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.WaterPoints.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.WaterPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.WaterPoints.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.WaterPoints.Status", "desc": "Status"},
-						{"name": "FIELD_PREFIX.WaterPoints.Material", "desc": "Material"},
-						{"name": "FIELD_PREFIX.WaterPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
-						{"name": "FIELD_PREFIX.WaterPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Accuracy_Level", "desc": "AL"},
+						{"name": "FIELD_PREFIX.WaterPoints.Material", "desc": "Material"},	
+						{"name": "FIELD_PREFIX.WaterPoints.Diameter_Size", "desc": "Diameter Size"},
 						{"name": "FIELD_PREFIX.WaterPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
 						{"name": "FIELD_PREFIX.WaterPoints.Tunnel_Casing", "desc": "Tunnel Casing"},
 						{"name": "FIELD_PREFIX.WaterPoints.Tunnel_Dimension", "desc": "Tunnel Dimension"},
 						{"name": "FIELD_PREFIX.WaterPoints.Northing", "desc": "Northing"},
 						{"name": "FIELD_PREFIX.WaterPoints.Easting", "desc": "Easting"},
-						{"name": "FIELD_PREFIX.WaterPoints.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.WaterPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WaterPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WaterPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WaterPoints.Notes", "desc": "Notes"},
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}	
 					]
 				},
 				{
@@ -376,17 +470,23 @@
 					"opacity": 1.0,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.WaterLines.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.WaterLines.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.WaterLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.WaterLines.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.WaterLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Accuracy_Level", "desc": "AL"},
 						{"name": "FIELD_PREFIX.WaterLines.Material", "desc": "Material"},
-						{"name": "FIELD_PREFIX.WaterLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
-						{"name": "FIELD_PREFIX.WaterLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WaterLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.WaterLines.Material", "desc": "Material"},
 						{"name": "FIELD_PREFIX.WaterLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
 						{"name": "FIELD_PREFIX.WaterLines.Tunnel_Casing", "desc": "Tunnel Casing"},
 						{"name": "FIELD_PREFIX.WaterLines.Tunnel_Dimension", "desc": "Tunnel Dimension"},
-						{"name": "FIELD_PREFIX.WaterLines.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.WaterLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WaterLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WaterLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WaterLines.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}
 					]
 				}
 			]
@@ -406,19 +506,25 @@
 					"size": 2,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.WasteWaterPoints.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.WasteWaterPoints.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.WasteWaterPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.WasteWaterPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Accuracy_Level", "desc": "AL"},
 						{"name": "FIELD_PREFIX.WasteWaterPoints.Material", "desc": "Material"},
-						{"name": "FIELD_PREFIX.WasteWaterPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
-						{"name": "FIELD_PREFIX.WasteWaterPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Material", "desc": "Material"},
 						{"name": "FIELD_PREFIX.WasteWaterPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
 						{"name": "FIELD_PREFIX.WasteWaterPoints.Tunnel_Casing", "desc": "Tunnel Casing"},
 						{"name": "FIELD_PREFIX.WasteWaterPoints.Tunnel_Dimension", "desc": "Tunnel Dimension"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
 						{"name": "FIELD_PREFIX.WasteWaterPoints.Northing", "desc": "Northing"},
 						{"name": "FIELD_PREFIX.WasteWaterPoints.Easting", "desc": "Easting"},
-						{"name": "FIELD_PREFIX.WasteWaterPoints.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.WasteWaterPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WasteWaterPoints.Notes", "desc": "Notes"},
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}
 					]
 				},
 				{
@@ -429,17 +535,23 @@
 					"opacity": 1.0,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.WasteWaterLines.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.WasteWaterLines.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.WasteWaterLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.WasteWaterLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Accuracy_Level", "desc": "AL"},
 						{"name": "FIELD_PREFIX.WasteWaterLines.Material", "desc": "Material"},
-						{"name": "FIELD_PREFIX.WasteWaterLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
-						{"name": "FIELD_PREFIX.WasteWaterLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Material", "desc": "Material"},
 						{"name": "FIELD_PREFIX.WasteWaterLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
 						{"name": "FIELD_PREFIX.WasteWaterLines.Tunnel_Casing", "desc": "Tunnel Casing"},
 						{"name": "FIELD_PREFIX.WasteWaterLines.Tunnel_Dimension", "desc": "Tunnel Dimension"},
-						{"name": "FIELD_PREFIX.WasteWaterLines.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.WasteWaterLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.WasteWaterLines.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}	
 					]
 				}
 			]
@@ -458,17 +570,26 @@
 					"size": 2,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.TelecomPoints.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.TelecomPoints.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.TelecomPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.TelecomPoints.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.TelecomPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Accuracy_Level", "desc": "AL"},
 						{"name": "FIELD_PREFIX.TelecomPoints.Material", "desc": "Material"},
-						{"name": "FIELD_PREFIX.TelecomPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
-						{"name": "FIELD_PREFIX.TelecomPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Diameter_Size", "desc": "Diameter Size"},
 						{"name": "FIELD_PREFIX.TelecomPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Num_Conduits", "desc": "# Conduits"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Num_Of_Direct_Buried_Cables", "desc": "# Cables"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Duct_Trench_Infa_Type", "desc": "Duct-Trench-Type"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Duct_Trench_Size", "desc": "Duct-Trench-Size"},
 						{"name": "FIELD_PREFIX.TelecomPoints.Northing", "desc": "Northing"},
 						{"name": "FIELD_PREFIX.TelecomPoints.Easting", "desc": "Easting"},
-						{"name": "FIELD_PREFIX.TelecomPoints.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.TelecomPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.TelecomPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.TelecomPoints.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}
 					]
 				},
 				{
@@ -479,15 +600,25 @@
 					"opacity": 1.0,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.TelecomLines.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.TelecomLines.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.TelecomLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.TelecomLines.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.TelecomLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Accuracy_Level", "desc": "AL"},
 						{"name": "FIELD_PREFIX.TelecomLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.TelecomLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.TelecomLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.TelecomLines.Num_Conduits", "desc": "# Conduits"},
+						{"name": "FIELD_PREFIX.TelecomLines.Num_Of_Direct_Buried_Cables", "desc": "# Cables"},
+						{"name": "FIELD_PREFIX.TelecomLines.Duct_Trench_Infa_Type", "desc": "Duct-Trench-Type"},
+						{"name": "FIELD_PREFIX.TelecomLines.Duct_Trench_Size", "desc": "Duct-Trench-Size"},
+						{"name": "FIELD_PREFIX.TelecomLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
 						{"name": "FIELD_PREFIX.TelecomLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
 						{"name": "FIELD_PREFIX.TelecomLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
-						{"name": "FIELD_PREFIX.TelecomLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
-						{"name": "FIELD_PREFIX.TelecomLines.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.TelecomLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.TelecomLines.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}	
 					]
 				}
 			]
@@ -506,16 +637,24 @@
 					"size": 2,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.PetrolPoints.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.PetrolPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.PetrolPoints.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.PetrolPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Accuracy_Level", "desc": "AL"},
 						{"name": "FIELD_PREFIX.PetrolPoints.Material", "desc": "Material"},
-						{"name": "FIELD_PREFIX.PetrolPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
-						{"name": "FIELD_PREFIX.PetrolPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Diameter_Size", "desc": "Diameter Size"},
 						{"name": "FIELD_PREFIX.PetrolPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Material_Pipeline_Coating", "desc": "Coating"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Max_Operating_Pressure", "desc": "Max Pressure"},
 						{"name": "FIELD_PREFIX.PetrolPoints.Northing", "desc": "Northing"},
 						{"name": "FIELD_PREFIX.PetrolPoints.Easting", "desc": "Easting"},
-						{"name": "FIELD_PREFIX.PetrolPoints.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.PetrolPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},						
+						{"name": "FIELD_PREFIX.PetrolPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.PetrolPoints.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}	
 					]
 				},
 				{
@@ -526,15 +665,24 @@
 					"opacity": 1.0,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.PetrolLines.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.PetrolLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.PetrolLines.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
+						{"name": "FIELD_PREFIX.PetrolLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Accuracy_Level", "desc": "AL"},
+						{"name": "FIELD_PREFIX.PetrolLines.Material", "desc": "Material"},
 						{"name": "FIELD_PREFIX.PetrolLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.PetrolLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.PetrolLines.Material_Pipeline_Coating", "desc": "Coating"},
+						{"name": "FIELD_PREFIX.PetrolLines.Max_Operating_Pressure", "desc": "Max Pressure"},
 						{"name": "FIELD_PREFIX.PetrolLines.Status", "desc": "Status"},
 						{"name": "FIELD_PREFIX.PetrolLines.Material", "desc": "Material"},
 						{"name": "FIELD_PREFIX.PetrolLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
 						{"name": "FIELD_PREFIX.PetrolLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
-						{"name": "FIELD_PREFIX.PetrolLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
-						{"name": "FIELD_PREFIX.PetrolLines.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.PetrolLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.PetrolLines.Notes", "desc": "Notes"},
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}	
 					]
 				}
 			]
@@ -553,17 +701,24 @@
 					"size": 2,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.GasPoints.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.GasPoints.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.GasPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.GasPoints.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.GasPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Accuracy_Level", "desc": "AL"},
 						{"name": "FIELD_PREFIX.GasPoints.Material", "desc": "Material"},
-						{"name": "FIELD_PREFIX.GasPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
-						{"name": "FIELD_PREFIX.GasPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.GasPoints.Diameter_Size", "desc": "Diameter Size"},
 						{"name": "FIELD_PREFIX.GasPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.GasPoints.Material_Pipeline_Coating", "desc": "Coating"},
+						{"name": "FIELD_PREFIX.GasPoints.Max_Operating_Pressure", "desc": "Max Pressure"},
 						{"name": "FIELD_PREFIX.GasPoints.Northing", "desc": "Northing"},
 						{"name": "FIELD_PREFIX.GasPoints.Easting", "desc": "Easting"},
-						{"name": "FIELD_PREFIX.GasPoints.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.GasPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
+						{"name": "FIELD_PREFIX.GasPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
+						{"name": "FIELD_PREFIX.GasPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.GasPoints.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}	
 					]
 				},
 				{
@@ -574,15 +729,22 @@
 					"opacity": 1.0,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.GasLines.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.GasLines.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.GasLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.GasLines.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.GasLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Accuracy_Level", "desc": "AL"},
 						{"name": "FIELD_PREFIX.GasLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.GasLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.GasLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.GasLines.Material_Pipeline_Coating", "desc": "Coating"},
+						{"name": "FIELD_PREFIX.GasLines.Max_Operating_Pressure", "desc": "Max Pressure"},
 						{"name": "FIELD_PREFIX.GasLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
 						{"name": "FIELD_PREFIX.GasLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
-						{"name": "FIELD_PREFIX.GasLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
-						{"name": "FIELD_PREFIX.GasLines.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.GasLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.GasLines.Notes", "desc": "Notes"},
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}	
 					]
 				}
 			]
@@ -601,17 +763,26 @@
 					"size": 2,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.ElectricPoints.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.ElectricPoints.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.ElectricPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.ElectricPoints.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.ElectricPoints.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Accuracy_Level", "desc": "AL"},
 						{"name": "FIELD_PREFIX.ElectricPoints.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Num_Conduits", "desc": "# Conduits"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Num_Of_Direct_Buried_Cables", "desc": "# Cables"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Duct_Trench_Infa_Type", "desc": "Duct-Trench-Type"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Duct_Trench_Size", "desc": "Duct-Trench-Size"},						
 						{"name": "FIELD_PREFIX.ElectricPoints.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
 						{"name": "FIELD_PREFIX.ElectricPoints.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
-						{"name": "FIELD_PREFIX.ElectricPoints.Depth_Of_Cover", "desc": "Depth Of Cover"},
 						{"name": "FIELD_PREFIX.ElectricPoints.Northing", "desc": "Northing"},
 						{"name": "FIELD_PREFIX.ElectricPoints.Easting", "desc": "Easting"},
-						{"name": "FIELD_PREFIX.ElectricPoints.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.ElectricPoints.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.ElectricPoints.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}		
 					]
 				},
 				{
@@ -622,15 +793,24 @@
 					"opacity": 1.0,
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.ElectricLines.OBJECTID", "desc": "Object ID"},
-						{"name": "FIELD_PREFIX.ElectricLines.JobID", "desc": "Job ID"},
-						{"name": "FIELD_PREFIX.ElectricLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.FCLUT.ShortDescription", "desc": "Item"},
+						{"name": "FIELD_PREFIX.ElectricLines.OBJECTID", "desc": "OID"},
+						{"name": "FIELD_PREFIX.Projects.PermitNumber", "desc": "Permit#"},
 						{"name": "FIELD_PREFIX.ElectricLines.Status", "desc": "Status"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
+						{"name": "FIELD_PREFIX.Projects.Accuracy_Level", "desc": "AL"},
 						{"name": "FIELD_PREFIX.ElectricLines.Material", "desc": "Material"},
+						{"name": "FIELD_PREFIX.ElectricLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
+						{"name": "FIELD_PREFIX.ElectricLines.Diameter_Size", "desc": "Diameter Size"},
+						{"name": "FIELD_PREFIX.ElectricLines.Num_Conduits", "desc": "# Conduits"},
+						{"name": "FIELD_PREFIX.ElectricLines.Num_Of_Direct_Buried_Cables", "desc": "# Cables"},
+						{"name": "FIELD_PREFIX.ElectricLines.Duct_Trench_Infa_Type", "desc": "Duct-Trench-Type"},
+						{"name": "FIELD_PREFIX.ElectricLines.Duct_Trench_Size", "desc": "Duct-Trench-Size"},						
 						{"name": "FIELD_PREFIX.ElectricLines.Rel_Horizontal_Pos", "desc": "Rel Horizontal Pos"},
 						{"name": "FIELD_PREFIX.ElectricLines.Rel_Vertical_Pos", "desc": "Rel Vertical Pos"},
-						{"name": "FIELD_PREFIX.ElectricLines.Depth_Of_Cover", "desc": "Depth Of Cover"},
-						{"name": "FIELD_PREFIX.ElectricLines.Notes", "desc": "Notes"}
+						{"name": "FIELD_PREFIX.ElectricLines.JobID", "desc": "Job ID"},
+						{"name": "FIELD_PREFIX.ElectricLines.Notes", "desc": "Notes"},						
+						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "UploadDate"}	
 					]
 				}
 			]
@@ -654,7 +834,7 @@
 					"outline": [255, 0, 0, 1],
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.Projects.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
 						{"name": "FIELD_PREFIX.Projects.JobID", "desc": "Job ID"},
 						{"name": "FIELD_PREFIX.Projects.UploadedBy", "desc": "Uploaded By"},
 						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "Upload Date"},
@@ -666,6 +846,7 @@
 						{"name": "FIELD_PREFIX.Projects.OwnerInfo", "desc": "Owner Info"},
 						{"name": "FIELD_PREFIX.Projects.EasementInfo", "desc": "Easement Info"},
 						{"name": "FIELD_PREFIX.Projects.Quality_Level", "desc": "Quality Level"},
+						{"name": "FIELD_PREFIX.Projects.OBJECTID", "desc": "OID"},
 						{"name": "FIELD_PREFIX.Projects.Notes", "desc": "Notes"}
 					]
 				}
@@ -691,7 +872,7 @@
 					"outline": [255, 0, 0, 1],
 					"definitionExpression": "1=1",
 					"fields": [
-						{"name": "FIELD_PREFIX.Projects.OBJECTID", "desc": "Object ID"},
+						{"name": "FIELD_PREFIX.JobType_LUT.DescShort", "desc": "Type"},
 						{"name": "FIELD_PREFIX.Projects.JobID", "desc": "Job ID"},
 						{"name": "FIELD_PREFIX.Projects.UploadedBy", "desc": "Uploaded By"},
 						{"name": "FIELD_PREFIX.Projects.UploadDate", "desc": "Upload Date"},
@@ -703,6 +884,7 @@
 						{"name": "FIELD_PREFIX.Projects.OwnerInfo", "desc": "Owner Info"},
 						{"name": "FIELD_PREFIX.Projects.EasementInfo", "desc": "Easement Info"},
 						{"name": "FIELD_PREFIX.Projects.Accuracy_Level", "desc": "Accuracy Level"},
+						{"name": "FIELD_PREFIX.Projects.OBJECTID", "desc": "OID"},
 						{"name": "FIELD_PREFIX.Projects.Notes", "desc": "Notes"}
 					]
 				}
