@@ -93,7 +93,7 @@ define([
     },
 
     /**
-     * Trigerred when the user clicks on the "Projects List" button
+     * Triggered when the user clicks on the "Projects List" button
      */
     _handleClick: function() {
 

@@ -120,7 +120,7 @@ define([
 
 
       queryTask.execute(query, lang.hitch(this, function(data) {
-        console.log(data.features);
+        
         if(data.features.length) {
           for (var i = 0; i < data.features.length; i++)
           {
