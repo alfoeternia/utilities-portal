@@ -7,9 +7,10 @@ define([
   'widgets/layersTools',
   'widgets/projectsTools',
   'widgets/filterTools',
+  'widgets/distinguishTools',
   'esri/dijit/Geocoder',
   'esri/IdentityManager'
-], function (MapController, BaseMapController, ToolbarController, DataTools, LayersTools, ProjectsTools, FilterTools, Geocoder) {
+], function (MapController, BaseMapController, ToolbarController, DataTools, LayersTools, ProjectsTools, FilterTools, DistinguishTools, Geocoder) {
 
   var featuresFile;
 
@@ -50,12 +51,21 @@ define([
     // Loads the geocoder search bar (top-left corner)
     // Used on both portals
     geocoder = new Geocoder({ 
-          map: options.map,
-          highlightLocation: true,
-          showResults: true,
-          autoComplete: true
-        }, "geocoder-search");
+      map: options.map,
+      highlightLocation: true,
+      showResults: true,
+      autoComplete: true
+    }, "geocoder-search");
     geocoder.startup();
+
+    // Loads the distinguish tool
+    // Used on both portals
+    distinguishTool = new DistinguishTools({ 
+      map: options.map,
+      featuresFile: featuresFile,
+      layers: options.layers,
+    }, "geocoder-search");
+    distinguishTool.load();
 
     // Loads the "Projects List" tool in the navbar
     // Used ONLY for Approval Portal

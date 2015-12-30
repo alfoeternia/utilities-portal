@@ -42,6 +42,11 @@ define([
 
         layer.isProject = feature.isProject || false;
         layer.projectName = layer.isProject ? feature.name : undefined;
+        layer.featureType = layerItem.type;
+        layer.featureColor = layerItem.color; // All types
+        layer.featureSize = layerItem.size; // Points
+        layer.featureWidth = layerItem.width; // Lines
+        layer.featureOutline = layerItem.outline; // Polygons
 
         // Generate the renderer
         //

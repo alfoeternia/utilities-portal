@@ -98,6 +98,7 @@
                     <li><a href="#" id="full-extent"><div class="glyphicon glyphicon-screenshot"></div> Nevada</a></li>
                     <li><a href="#" id="get-data"><div class="glyphicon glyphicon-th-list"></div> Get Data</a></li>
                     <li><a href="#" id="get-projects"><div class="glyphicon glyphicon-road"></div> Projects List</a></li>
+                    <li><a href="#" id="distinguish-projects"><div class="glyphicon glyphicon-sort"></div> Distinguish Projects</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right visible-if-gt-1300px">
@@ -167,6 +168,23 @@
     <div id="projects-tool" style="visibility:none; display:none; absolute; top:-1000px; left:-1000px;w">
         <div style="width: 98%; height: 98%">
             <div id="projects-tool-tabcontainer"></div>
+        </div>
+    </div>
+
+    <!-- Distinguish tool (Floating Pane) -->
+    <div id="distinguish-tool" style="visibility:none; display:none; absolute; top:-1000px; left:-1000px;w">
+        <div style="width: 98%; height: 95%; margin: 10px">
+            Distinguish projects by: <select data-dojo-type="dijit/form/ComboBox" id="fruit" name="fruit">
+                <option selected>Job ID</option>
+                <option>Permit Number</option>
+                <option>Date</option>
+            </select>
+
+            <button id="distinguish-toggle"></button>
+
+            <h4>Legend</h4>
+
+            <div id="distinguish-legend"></div>
         </div>
     </div>
 </body>
